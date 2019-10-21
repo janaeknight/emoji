@@ -8,25 +8,84 @@
     <link href="css/flex.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <script src="java/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <!-- Are We There Yet? --> 
+    <!--
+        🐱‍🐉
+    -->
 </head>
 <body>
     <div class="window column">
-        <div class="taskbar row">
+        <div class="taskbar">
             <div class="db5">
-                <span class=""><b>The Emoji Game 😈</b></span>
+                <span id="target"><b>The Emoji Game 😈</b></span>
             </div>
             <div class="db5 txt-right">
-                <a href="" target="_blank">☽</a>
-                <a href="" target="_blank">☀</a>
-                <a href="">☮</a>
+                <a href="" target="_blank">☻</a>
+                <a href="" target="_blank"><b>?</b></a>
+                <a href="https://github.com/janaeknight"><b>X</b></a>
             </div>
         </div>
-        <div class="g">
-
+        <div class="busy column">
+            <div id="start" class="txt-center">
+                <span class="t3">😭</span><br><br><br>
+                <div class="box row">
+                    <div class="db5">
+                        <span id="startgame-btn">> Start Game</span><br><br>
+                        <span id="cheatsheet-btn">> Cheatsheet</span> 
+                    </div>
+                    <div class="db5">
+                        <span id="instructions-btn">> Instructions</span><br><br>
+                        <div id="level-btn">> Level Select</div>
+                    </div>
+                </div>
+            </div>
+            <div id="game">
+                <!--span class="t1">Level _!</span-->
+                <div id="wrwc1"></div>
+            </div>
         </div>
     </div> <!--window-->
+    <div id="cheatsheet">
+        <div class="taskbar">
+            <div class="db5">
+                <span><b>Cheatsheet 📜</b></span>
+            </div>
+            <div class="db5 txt-right">
+                <a href="" id="cheatsheet-exit"><b>X</b></a>
+            </div>
+        </div>
+        <div id="cheat-passlock column">
+
+        </div>
+    </div> <!--cheatsheet-->
     <div class="credit txt-center">
-        <span>Made with love by GirlWithHat ♥</span>
+            <a href="" target="_blank"><span>Made with love by GirlWithHat ♥</span></a>
     </div>
+    <script>
+        $( "#target" ).click(function() {
+            alert( "Handler for .click() called." );
+        });
+    </script> 
+    <script>
+        $( function() {
+            $( "#cheatsheet" ).draggable();
+        } );
+        </script>
+
+    <!-- Cheatsheet -->
+    <script>
+        $(function() {
+            $( "#cheatsheet-btn" ).click(function() {
+                $( "#cheatsheet" ).show();
+            });
+        })
+        $(function() {
+            $( "#cheatsheet-exit" ).click(function() {
+                $( "#cheatsheet" ).hide();
+            });
+        })
+    </script>
 </body>
 </html>
