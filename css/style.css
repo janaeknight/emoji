@@ -1,0 +1,37 @@
+html {
+    background-color: #FFC83D;
+    cursor: url(http://cur.cursors-4u.net/smilies/smi-3/smi204.cur), auto !important;
+}
+html a button form input {
+    cursor: url(http://cur.cursors-4u.net/smilies/smi-2/smi198.cur), pointer !important;
+}
+
+body {
+    overflow: hidden; width: 99vw; height: 99vh;
+    margin-left: auto; margin-right: auto; padding-top: 100px;
+}
+
+.window {
+    width: 600px; height: 400px; background-color: lightcyan;
+    margin-left: auto; margin-right: auto; 
+    border: 1px groove grey; outline: 2px inset gray;
+    font-family: Consolas, monaco, monospace;
+}
+.taskbar {
+    width: inherit; height: 26px; background-color: pink; 
+    font-size: 18px; border-bottom: 1.5px inset black;
+}
+
+.e1 { font-size: 52px; }
+.e2 { font-size: 48px; }
+.e3 { font-size: 34px; }
+
+
+/*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
+
+.credit {
+    width: 275px; height: 20px; background-color: gray;
+    border: 2px groove silver; margin-top: 150px; padding-top: 5px;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace; font-size: 14px;
+    margin-left: auto; margin-right: auto; 
+}
