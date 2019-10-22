@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>😈</title>
+    <title>😈 The Emoji Game</title>
     <link href="css/flex.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <script src="java/javascript.js"></script>
@@ -27,7 +27,7 @@
                 <a href="https://github.com/janaeknight"><b>X</b></a>
             </div>
         </div>
-        <div class="busy column">
+        <div class="busy">
             <div id="start" class="txt-center">
                 <span class="t3">😭</span><br><br><br>
                 <div class="box row">
@@ -40,10 +40,29 @@
                         <div id="level-btn">> Level Select</div>
                     </div>
                 </div>
+            </div> <!--start-->
+            <div id="instructions" class="column">
+                <a href="" id="backtomenu-btn"> 〱 Back to Menu </a><br><br>
+                <div class="column txt-center">
+                    <h1>Instructions</h1><br>
+                    <span>🔎 Examine the emojis.</span><br>
+                    <span> &#x1F575;&#xFE0F;&#x200D;&#x2640;&#xFE0F; Decipher the code.</span><br>
+                    <span>📓 Write what you think the pictogram means.</span><br>
+                    <span> ✔ Pass the level and ➡ to the next one 😎</span>
+                </div>
+            </div><!--instructions-->
+            <div id="level-select">
+                <a href="" id="backtomenu-btn"> 〱 Back to Menu </a><br><br>
+                <div class="column txt-center">
+                    <h1>Level Select</h1><br>
+                </div>
             </div>
-            <div id="game">
-                <!--span class="t1">Level _!</span-->
-                <div id="wrwc1"></div>
+            <div id="gamebox">
+                <h3>Level <span id="levelnum"></span></h3>
+                <div id="wrwc1"><p>hi.</p></div>
+                <form id=lvl1>
+                    
+                </form>
             </div>
         </div>
     </div> <!--window-->
@@ -59,21 +78,36 @@
         <div id="cheat-passlock column">
 
         </div>
+        <div class="busy" id="cheat-busy">
+
+        </div>
     </div> <!--cheatsheet-->
     <div class="credit txt-center">
-            <a href="" target="_blank"><span>Made with love by GirlWithHat ♥</span></a>
+        <a href="https://janaeknight.github.io/" target="_blank"><span>Made with love by GirlWithHat ♥</span></a>
     </div>
-    <script>
-        $( "#target" ).click(function() {
-            alert( "Handler for .click() called." );
-        });
-    </script> 
-    <script>
-        $( function() {
-            $( "#cheatsheet" ).draggable();
-        } );
-        </script>
 
+<!----------------------------- JQUERY SCRIPTS ----------------------------->
+
+
+
+    <!-- Instructions -->
+    <script>
+        $(function() {
+            $( "#instructions-btn" ).click(function() {
+                $( "#start" ).hide();
+                $( "#instructions" ).show();
+            });
+        })
+    </script>
+    <!-- Level Select -->
+    <script>
+        $(function() {
+            $( "#level-btn" ).click(function() {
+                $( "#start" ).hide();
+                $( "#level-select" ).show();
+            });
+        })
+    </script>
     <!-- Cheatsheet -->
     <script>
         $(function() {
