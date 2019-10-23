@@ -19,104 +19,124 @@
     -->
 </head>
 <body>
-    <div class="window column ui-widget-content">
-        <div class="taskbar">
-            <div class="db5">
-                <span id="target"><b>The Emoji Game 😈</b></span>
-            </div>
-            <div class="db5 txt-right">
-                <a id="smiley-btn">☻</a>
-                <a id=""><b>?</b></a>
-                <a href="https://github.com/janaeknight"><b>X</b></a>
-            </div>
-        </div>
-        <div class="busy">
-            <div id="start" class="txt-center">
-                <span class="t3">😭</span><br><br><br>
-                <div class="box row">
-                    <div class="db5">
-                        <span id="startgame-btn">> Start Game</span><br><br>
-                        <span id="cheatsheet-btn">> Cheatsheet</span> 
-                    </div>
-                    <div class="db5">
-                        <span id="instructions-btn">> Instructions</span><br><br>
-                        <div id="level-btn">> Level Select</div>
-                    </div>
-                </div>
-            </div> <!--start-->
-            <div id="instructions" class="column">
-                <a id="backtomenu-btn1"> 〱 Back to Menu </a><br><br>
-                <div class="column txt-center">
-                    <h1>Instructions</h1><br>
-                    <span>🔎 Examine the emojis.</span><br>
-                    <span> &#x1F575;&#xFE0F;&#x200D;&#x2640;&#xFE0F; Decipher the code.</span><br>
-                    <span>📓 Write what you think the pictogram means.</span><br>
-                    <span> ✔ Pass the level and ➡ to the next one 😎</span>
-                </div>
-            </div><!--instructions-->
-            <div id="level-select">
-                <a id="backtomenu-btn2"> 〱 Back to Menu </a><br><br>
-                <div class="column txt-center">
-                    <h1>Level Select</h1><br>
-                </div>
-            </div>
-            <div id="gamebox">
-                <h3>Level <span id="levelnum"></span></h3>
-                <div id="wrwc1"><p>hi.</p></div>
-                <form id=lvl1>
-                    
-                </form>
-            </div>
-        </div>
-    </div> <!--window-->
-    <div id="cheatsheet" class="ui-widget-content">
-        <div class="taskbar">
-            <div class="db5">
-                <span><b>Cheatsheet 📜</b></span>
-            </div>
-            <div class="db5 txt-right">
-                <a id="cheatsheet-exit"><b>X</b></a>
-            </div>
-        </div>
-        <div id="cheat-passlock" class="txt-center">
-            <br><br><br>
-            <span class="t1">Enter Password:</span><br>
-            <form>
-                <input type="password" id="cheat-pass"><br><br>
-                <button type="submit" id="cheat-pass-btn">🔑 Unlock 🍗</button>
-            </form>
-            <br>
-            <span><b>Hint: </b> password ;) </span>
-        </div>
-        <div class="busy" id="cheat-busy">
 
-        </div>
-    </div> <!--cheatsheet-->
-    <div id="smiley" class="column ui-widget-content">
-        <div class="taskbar">
-            <div class="db5">
-                <span><b>Smiley 🙂</b></span>
-            </div>
-            <div class="db5 txt-right">
-                <a id="smiley-exit"><b>X</b></a>
-            </div>
-        </div>
-            <div class="smile column busy">
-                <span class="t4">Here's Johnny Seriously</span><br><br>
-                <form id="">
-                    <input type="radio" name="mood" value="m-smile">😊
-                    <input type="radio" name="mood" value="m-okay">😐
-                    <input type="radio" name="mood" value="m-frown">🙁
-                    <input type="radio" name="mood" value="m-ewwww">🤢
-                    <textarea name="message" rows="10" cols="24" placeholder="👏👏👏👏👏👏👏"></textarea>
-                    <button type="submit" id="smiley-submit">💭</button>
-                </form>
-            </div>
-        </div>
-    </div> <!--smiley-->
-    <div class="credit txt-center">
-        <a href="https://janaeknight.github.io/" target="_blank"><span>Made with love by GirlWithHat ♥</span></a>
+
+    <div class="db3">
+
+        <div id="smiley" class="column ui-widget-content">
+                <div class="taskbar">
+                    <div class="db5">
+                        <span><b>Smiley 🙂</b></span>
+                    </div>
+                    <div class="db5 txt-right">
+                        <a id="smiley-exit"><b>X</b></a>
+                    </div>
+                </div>
+                    <div class="smile column busy">
+                        <span class="t4">Here's Johnny Seriously</span><br><br>
+                        <form id="">
+                            <input type="radio" name="mood" value="m-smile">😊
+                            <input type="radio" name="mood" value="m-okay">😐
+                            <input type="radio" name="mood" value="m-frown">🙁
+                            <input type="radio" name="mood" value="m-ewwww">🤢
+                            <textarea name="message" rows="10" cols="24" placeholder="👏👏👏👏👏👏👏"></textarea>
+                            <button type="submit" id="smiley-submit">💭</button>
+                        </form>
+                    </div>
+                </div>
+            </div> <!--smiley-->
+
     </div>
+
+
+
+    <div class="db4 margin">
+
+        <div class="window column ui-widget-content">
+            <div class="taskbar">
+                <div class="db5">
+                    <span id="target"><b>The Emoji Game 😈</b></span>
+                </div>
+                <div class="db5 txt-right">
+                    <a id="smiley-btn">☻</a>
+                    <a id=""><b>?</b></a>
+                    <a href="https://github.com/janaeknight"><b>X</b></a>
+                </div>
+            </div>
+            <div class="busy">
+                <div id="start" class="txt-center">
+                    <span class="t3">😭</span><br><br><br>
+                    <div class="box row">
+                        <div class="db5">
+                            <span id="startgame-btn">> Start Game</span><br><br>
+                            <span id="cheatsheet-btn">> Cheatsheet</span> 
+                        </div>
+                        <div class="db5">
+                            <span id="instructions-btn">> Instructions</span><br><br>
+                            <div id="level-btn">> Level Select</div>
+                        </div>
+                    </div>
+                </div> <!--start-->
+                <div id="instructions" class="column">
+                    <a id="backtomenu-btn1"> 〱 Back to Menu </a><br><br>
+                    <div class="column txt-center">
+                        <h1>Instructions</h1><br>
+                        <span>🔎 Examine the emojis.</span><br>
+                        <span> &#x1F575;&#xFE0F;&#x200D;&#x2640;&#xFE0F; Decipher the code.</span><br>
+                        <span>📓 Write what you think the pictogram means.</span><br>
+                        <span> ✔ Pass the level and ➡ to the next one 😎</span>
+                    </div>
+                </div><!--instructions-->
+                <div id="level-select">
+                    <a id="backtomenu-btn2"> 〱 Back to Menu </a><br><br>
+                    <div class="column txt-center">
+                        <h1>Level Select</h1><br>
+                    </div>
+                </div>
+                <div id="gamebox">
+                    <h3>Level <span id="levelnum"></span></h3>
+                    <div id="wrwc1"><p>hi.</p></div>
+                    <form id=lvl1>
+                        
+                    </form>
+                </div>
+            </div>
+        </div> <!--window-->
+
+    </div>
+
+
+
+    <div class="db3">
+            <div id="cheatsheet" class="ui-widget-content">
+                <div class="taskbar">
+                    <div class="db5">
+                        <span><b>Cheatsheet 📜</b></span>
+                    </div>
+                    <div class="db5 txt-right">
+                        <a id="cheatsheet-exit"><b>X</b></a>
+                    </div>
+                </div>
+                <div id="cheat-passlock" class="txt-center">
+                    <br><br><br>
+                    <span class="t1">Enter Password:</span><br>
+                    <form>
+                        <input type="password" id="cheat-pass"><br><br>
+                        <button type="submit" id="cheat-pass-btn">🔑 Unlock 🍗</button>
+                    </form>
+                    <br>
+                    <span><b>Hint: </b> password ;) </span>
+                </div>
+                <div class="busy" id="cheat-busy">
+
+                </div>
+            </div> <!--cheatsheet-->
+    </div>
+
+
+    <!--div class="credit txt-center">
+        <a href="https://janaeknight.github.io/" target="_blank"><span>Made with love by GirlWithHat ♥</span></a>
+    </div-->
 
 <!----------------------------- JQUERY SCRIPTS ----------------------------->
 
