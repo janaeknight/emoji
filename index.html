@@ -9,21 +9,23 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <script src="java/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
 
     <!-- Are We There Yet? --> 
     <!--
-        🐱‍🐉
+        🙏🏽🐱‍🐉 ----------- Godzilla
     -->
 </head>
 <body>
-    <div class="window column">
+    <div class="window column ui-widget-content">
         <div class="taskbar">
             <div class="db5">
                 <span id="target"><b>The Emoji Game 😈</b></span>
             </div>
             <div class="db5 txt-right">
-                <a href="" target="_blank">☻</a>
-                <a href="" target="_blank"><b>?</b></a>
+                <a id="smiley-btn">☻</a>
+                <a id=""><b>?</b></a>
                 <a href="https://github.com/janaeknight"><b>X</b></a>
             </div>
         </div>
@@ -42,7 +44,7 @@
                 </div>
             </div> <!--start-->
             <div id="instructions" class="column">
-                <a href="" id="backtomenu-btn"> 〱 Back to Menu </a><br><br>
+                <a id="backtomenu-btn1"> 〱 Back to Menu </a><br><br>
                 <div class="column txt-center">
                     <h1>Instructions</h1><br>
                     <span>🔎 Examine the emojis.</span><br>
@@ -52,7 +54,7 @@
                 </div>
             </div><!--instructions-->
             <div id="level-select">
-                <a href="" id="backtomenu-btn"> 〱 Back to Menu </a><br><br>
+                <a id="backtomenu-btn2"> 〱 Back to Menu </a><br><br>
                 <div class="column txt-center">
                     <h1>Level Select</h1><br>
                 </div>
@@ -66,13 +68,13 @@
             </div>
         </div>
     </div> <!--window-->
-    <div id="cheatsheet">
+    <div id="cheatsheet" class="ui-widget-content">
         <div class="taskbar">
             <div class="db5">
                 <span><b>Cheatsheet 📜</b></span>
             </div>
             <div class="db5 txt-right">
-                <a href="" id="cheatsheet-exit"><b>X</b></a>
+                <a id="cheatsheet-exit"><b>X</b></a>
             </div>
         </div>
         <div id="cheat-passlock column">
@@ -82,6 +84,28 @@
 
         </div>
     </div> <!--cheatsheet-->
+    <div id="smiley" class="column ui-widget-content">
+        <div class="taskbar">
+            <div class="db5">
+                <span><b>Smiley 🙂</b></span>
+            </div>
+            <div class="db5 txt-right">
+                <a id="smiley-exit"><b>X</b></a>
+            </div>
+        </div>
+            <div class="smile column busy">
+                <span class="t4">Here's Johnny Seriously</span><br><br>
+                <form id="">
+                    <input type="radio" name="mood" value="m-smile">😊
+                    <input type="radio" name="mood" value="m-okay">😐
+                    <input type="radio" name="mood" value="m-frown">🙁
+                    <input type="radio" name="mood" value="m-ewwww">🤢
+                    <textarea name="message" rows="10" cols="24" placeholder="👏👏👏👏👏👏👏"></textarea>
+                    <button type="submit" id="smiley-submit">💭</button>
+                </form>
+            </div>
+        </div>
+    </div> <!--smiley-->
     <div class="credit txt-center">
         <a href="https://janaeknight.github.io/" target="_blank"><span>Made with love by GirlWithHat ♥</span></a>
     </div>
@@ -121,5 +145,37 @@
             });
         })
     </script>
+    <!-- Smiley -->
+    <script>
+        $(function() {
+            $( "#smiley-btn" ).click(function() {
+                $( "#smiley" ).show();
+            });
+        });
+        $(function() {
+            $( "#smiley-exit" ).click(function() {
+                $( "#smiley" ).hide();
+            });
+        })
+    </script>
+    <!--------------------------------------------->
+    <script>
+        $(function() {
+            $( ".window" ).draggable();
+            $( "#smiley" ).draggable();
+            $( "#cheatsheet" ).draggable();
+        });
+        $(function() {
+            $( "#backtomenu-btn1").click(function() {
+                $( "#instructions" ).hide();
+                $( "#start" ).show();
+            })
+            $( "#backtomenu-btn2").click(function() {
+                $( "#level-select" ).hide();
+                $( "#start" ).show();
+            })
+        })
+    
+     </script>
 </body>
 </html>
