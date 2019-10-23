@@ -13,6 +13,7 @@
       
 
     <!-- Are We There Yet? --> 
+    <!-- FACEBOOK IS SATAN'S COOKBOOK PERIOD!! -->
     <!--
         🙏🏽🐱‍🐉 ----------- Godzilla
     -->
@@ -77,8 +78,15 @@
                 <a id="cheatsheet-exit"><b>X</b></a>
             </div>
         </div>
-        <div id="cheat-passlock column">
-
+        <div id="cheat-passlock" class="txt-center">
+            <br><br><br>
+            <span class="t1">Enter Password:</span><br>
+            <form>
+                <input type="password" id="cheat-pass"><br><br>
+                <button type="submit" id="cheat-pass-btn">🔑 Unlock 🍗</button>
+            </form>
+            <br>
+            <span><b>Hint: </b> password ;) </span>
         </div>
         <div class="busy" id="cheat-busy">
 
@@ -121,7 +129,7 @@
                 $( "#start" ).hide();
                 $( "#instructions" ).show();
             });
-        })
+        });
     </script>
     <!-- Level Select -->
     <script>
@@ -130,7 +138,7 @@
                 $( "#start" ).hide();
                 $( "#level-select" ).show();
             });
-        })
+        });
     </script>
     <!-- Cheatsheet -->
     <script>
@@ -138,12 +146,25 @@
             $( "#cheatsheet-btn" ).click(function() {
                 $( "#cheatsheet" ).show();
             });
-        })
+        });
         $(function() {
             $( "#cheatsheet-exit" ).click(function() {
                 $( "#cheatsheet" ).hide();
             });
-        })
+        });
+        $(function() {
+            $(" #cheat-pass-btn ").click(function() {
+                let inputCheatPass = $(" #cheatsheet input:password ").val();
+                if(inputCheatPass === "password1") {
+                    $(" #cheat-passlock" ).hide();
+                    $(" #cheat-busy" ).show();	
+                    alert("Sure.")
+                } else {
+                    alert("Wrong!");
+                    $( " #cheatsheet " ).addClass( " .shake-horizontal " );
+                }
+            });
+        });
     </script>
     <!-- Smiley -->
     <script>
@@ -156,7 +177,7 @@
             $( "#smiley-exit" ).click(function() {
                 $( "#smiley" ).hide();
             });
-        })
+        });
     </script>
     <!--------------------------------------------->
     <script>
@@ -169,12 +190,12 @@
             $( "#backtomenu-btn1").click(function() {
                 $( "#instructions" ).hide();
                 $( "#start" ).show();
-            })
+            });
             $( "#backtomenu-btn2").click(function() {
                 $( "#level-select" ).hide();
                 $( "#start" ).show();
-            })
-        })
+            });
+        });
     
      </script>
 </body>

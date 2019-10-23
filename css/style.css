@@ -65,4 +65,4 @@ body {
 
 /*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
 
-#cheatsheet, #instructions, #level-select, #gamebox, #smiley { display: none; }
+#cheatsheet, #instructions, #level-select, #gamebox, #smiley, #cheat-busy { display: none; }  
