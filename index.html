@@ -21,7 +21,7 @@
 <body>
 
 
-    <div class="db3 column">
+    <div class="db1 column">
             <div id="cheatsheet" class="ui-widget-content">
                 <div class="taskbar">
                     <div class="db5">
@@ -36,19 +36,18 @@
                     <span class="t1">Enter Password:</span><br>
                     <form>
                         <input type="password" id="cheat-pass"><br><br>
-                        <button type="submit" id="cheat-pass-btn">🔑 Unlock 🍗</button>
+                        <button type="button" id="cheat-pass-btn">🔑 Unlock 🍗</button>
                     </form>
                     <br>
                     <span><b>Hint: </b> password ;) </span>
                 </div>
                 <div class="busy" id="cheat-busy">
-
+                    <span>Some stuff goes here :3</span>
                 </div>
             </div> <!--cheatsheet-->
     </div> <!-- section divider-->
 
-
-    <div class="db4 margin column">
+    <div class="db8 margin column">
         <div class="window column ui-widget-content">
             <div class="taskbar">
                 <div class="db5">
@@ -139,11 +138,28 @@
                     </div>
                 </div>
                 <div id="gamebox">
-                    <h3>Level <span id="levelnum"></span></h3>
-                    <div id="wrwc1"><p>hi.</p></div>
-                    <form id=lvl1>
-                        <input type="input" id="">
-                    </form>
+                        <div class="row">
+                            <h3 class="curr-lvl">Level <span id="levelnum"></span></h3>
+                        </div>
+                        <div class="levelswrapper row">
+                            <div id="wrwc1">
+                                <p>😊</p>
+                                <form id=lvl1>
+                                    <input type="input" id="lvl1Input">
+                                </form>
+                            </div> <!--wrwc1-->
+                        </div> <!--levelswrapper-->
+                        <div class="row" id="lvls-submenu">
+                            <div class="row">
+                                <div class="db2"></div>
+                                <div class="db4">
+                                    <span class="txt-center" id="Hint"></span>
+                                </div>
+                                <div class="db4">
+                                    <span class="txt-right" id="">Main</span>
+                                </div>
+                            </div>
+                        </div> <!--lvls-submenu-->
                 </div> <!--gamebox-->
             </div>
         </div> <!--window-->
@@ -152,7 +168,7 @@
         </div-->
     </div> <!-- section divider-->
 
-    <div class="db3 column">
+    <div class="db1 column">
         <div id="smiley" class="column ui-widget-content">
                 <div class="taskbar">
                     <div class="db5">
@@ -170,7 +186,7 @@
                             <input type="radio" name="mood" value="m-frown">🙁
                             <input type="radio" name="mood" value="m-ewwww">🤢
                             <textarea name="message" rows="10" cols="24" placeholder="👏👏👏👏👏👏👏"></textarea>
-                            <button type="submit" id="smiley-submit">💭</button>
+                            <button type="button" id="smiley-submit">💭</button>
                         </form>
                     </div>
                 </div>
@@ -217,7 +233,6 @@
                 if(inputCheatPass === "password1") {
                     $(" #cheat-passlock" ).hide();
                     $(" #cheat-busy" ).show();	
-                    alert("Sure.")
                 } else {
                     alert("Wrong!");
                     $( " #cheatsheet " ).addClass( " .shake-horizontal " );
@@ -255,7 +270,16 @@
                 $( "#start" ).show();
             });
         });
-    
-     </script>
+    </script>
+    <!--------------------------------------------->
+    <script>
+        $(function() {
+            $( "#startgame-btn" ).click(function() {
+            $( "#start" ).hide();
+            $( "#gamebox" ).show();
+            });
+        });
+    </script>
+
 </body>
 </html>

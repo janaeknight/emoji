@@ -1,3 +1,8 @@
+/*
+        BUGS: 
+                // On click events with text input respond negatively to using the enter key >:(
+*/
+
 html {
     background-color: #FFC83D;
     cursor: url(http://cur.cursors-4u.net/smilies/smi-3/smi204.cur), auto !important;
@@ -9,7 +14,7 @@ body a a:hover button form input {
 body {
     display: flex; flex-direction: row;
     overflow: hidden; width: 99vw; height: 99vh;
-    margin: 0 auto; font-family: Consolas, monaco, monospace;
+    margin: 0 auto; font-family: monospace, Consolas, monaco;
 }
 
 .window {
@@ -42,14 +47,14 @@ body {
 
 #cheatsheet {
     width: 450px; height: 225px; background-color: lightcyan;
-    z-index: 2; position: relative; margin-top: 233px;
+    z-index: 2; position: relative; margin-top: 233px; margin-left: 54px;
     border: 1px groove grey; outline: 2px inset gray;  
 }
 /*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
 
 #smiley {
     width: 220px; height: 345px; background-color: lightcyan;
-    z-index: 2; margin-top: 60px;
+    z-index: 2; position: relative; margin-top: 60px; margin-left: -100px;
     border: 1px groove grey; outline: 2px inset gray;  
 }
 
@@ -63,5 +68,9 @@ body {
 .credit a { text-decoration: none; color: #000; }
 
 /*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
+#gamebox { display: flex; flex-direction: column; width: 590px; height: 372px; }
+#gamebox p { text-align: center; font-size: 102px; padding: 0; margin: auto;}
+/*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
 
-#cheatsheet, #instructions, #level-select, #gamebox, #smiley, #cheat-busy { display: none; }  
+
+#cheatsheet, #instructions, #level-select, #gamebox, #smiley, #cheat-busy{ display: none; }  
