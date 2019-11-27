@@ -138,25 +138,26 @@
                     </div>
                 </div>
                 <div id="gamebox">
-                        <div class="row">
-                            <h3 class="curr-lvl">Level <span id="levelnum"></span></h3>
-                        </div>
                         <div class="levelswrapper row">
+
                             <div id="wrwc1">
-                                <p>😊</p>
-                                <form id=lvl1>
-                                    <input type="input" id="lvl1Input">
-                                </form>
+                                <div class="row">
+                                    <h3 class="curr-lvl">Level 1 // Compound Words<span id="levelnum"></span></h3>
+                                </div>
+                                <p>👬🚢</p>
+                                <input type="input" placeholder="friendship" id="lvl1Input">
+                                <span class="subLvl" id="lvl1Submit">Submit</span>
                             </div> <!--wrwc1-->
+
                         </div> <!--levelswrapper-->
                         <div class="row" id="lvls-submenu">
                             <div class="row">
                                 <div class="db2"></div>
                                 <div class="db4">
-                                    <span class="txt-center" id="Hint"></span>
+                                    <span class="txt-center" id="hint">hint goes here</span>
                                 </div>
                                 <div class="db4">
-                                    <span class="txt-right" id="">Main</span>
+                                    <span class="txt-right" id="menuFromBusy">Main Menu</span>
                                 </div>
                             </div>
                         </div> <!--lvls-submenu-->
@@ -179,7 +180,7 @@
                     </div>
                 </div>
                     <div class="smile column busy">
-                        <span class="t4">Here's Johnny Seriously</span><br><br>
+                        <span class="t4">Feedback</span><br><br>
                         <form id="">
                             <input type="radio" name="mood" value="m-smile">😊
                             <input type="radio" name="mood" value="m-okay">😐
@@ -260,6 +261,12 @@
             $( ".window" ).draggable();
             $( "#smiley" ).draggable();
             $( "#cheatsheet" ).draggable();
+        });
+        $(function() {
+            $( "#menuFromBusy" ).click(function() {
+                $( "#gamebox" ).hide();
+                $( "#start" ).show();
+            });
         });
         $(function() {
             $( "#backtomenu-btn1").click(function() {

@@ -87,3 +87,22 @@ body {
  * animation shake-horizontal
  * ----------------------------------------
  */
+.levelswrapper {
+    width: 590px; height: auto;
+    margin: 0 auto;
+}
+.levelswrapper input {
+    display: block; margin: 6px auto;
+    width: 585px; height: 50px;
+    text-align: center; font-size: 25px;
+}
+
+.subLvl {
+    text-align: center;
+    background-color: skyblue;
+}
+
+h3 {
+    padding: 0 1px; margin: 0;
+    margin-top: 10px;
+}
