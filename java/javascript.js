@@ -8,6 +8,16 @@ let lvl7 = document.getElementById("iuhv7");
 let lvl8 = document.getElementById("ooie8");
 let lvl9 = document.getElementById("nvjr9");
 let lvl10 = document.getElementById("oin10");
+let lvl11 = document.getElementById("yyb11");
+let lvl12 = document.getElementById("neh12");
+let lvl13 = document.getElementById("pqw13");
+let lvl14 = document.getElementById("tce14");
+let lvl15 = document.getElementById("vtv15");
+let lvl16 = document.getElementById("vte16");
+let lvl17 = document.getElementById("uhv17");
+let lvl18 = document.getElementById("nuh18");
+let lvl19 = document.getElementById("erd19");
+let lvl20 = document.getElementById("asd20");
 
 function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;

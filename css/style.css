@@ -89,6 +89,7 @@ body {
  * animation shake-horizontal
  * ----------------------------------------
  */
+
 .levelswrapper {
     width: 590px; height: auto;
     margin: 0 auto;
@@ -120,10 +121,14 @@ h3 {
 #menuFromBusy { display: block; padding-top: 10px;}
 
 /*-------------------------------------------------------------------*/
-#dpab2, #crew3, #bbgh4, #jkyg5, #dder6, #iuhv7, #ooie8, #nvjr9, #oin10 { display: none; }
+#dpab2, #crew3, #bbgh4, #jkyg5, #dder6, #iuhv7, #ooie8, #nvjr9, #oin10, #yyb11, #neh12, #pqw13, #tce14, #vtv15, #vte16, #uhv17, #nuh18, #erd19, #asd20
+
+{ display: none; }
 
 /*
     Hints:
 */
 
-#hint1Top, #hint1Bot, #hint2Top, #hint2Bot, #hint3Top, #hint3Bot, #hint4Top, #hint4Bot, #hint5Top, #hint5Bot, #hint6Top, #hint6Bot, #hint7Top, #hint7Bot, #hint8Top, #hint8Bot, #hint9Top, #hint9Bot, #hint10Top, #hint10Bot, #hint11Top, #hint11Bot, #hint12Top, #hint12Bot, #hint13Top, #hint13Bot, #hint14Top, #hint14Bot, #hint15Top, #hint15Bot { display: none; }
+#hint1Top, #hint1Bot, #hint2Top, #hint2Bot, #hint3Top, #hint3Bot, #hint4Top, #hint4Bot, #hint5Top, #hint5Bot, #hint6Top, #hint6Bot, #hint7Top, #hint7Bot, #hint8Top, #hint8Bot, #hint9Top, #hint9Bot, #hint10Top, #hint10Bot, #hint11Top, #hint11Bot, #hint12Top, #hint12Bot, #hint13Top, #hint13Bot, #hint14Top, #hint14Bot, #hint15Top, #hint15Bot, #hint16Top, #hint16Bot, #hint17Top, #hint17Bot, #hint18Top, #hint18Bot, #hint19Top, #hint19Bot, #hint20Top, #hint20Bot,
+#hintTop, #hintBot
+{ display: none; }
