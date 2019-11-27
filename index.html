@@ -7,7 +7,6 @@
     <title>😈 The Emoji Game</title>
     <link href="css/flex.css" type="text/css" rel="stylesheet" />
     <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <script src="java/javascript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
       
@@ -55,7 +54,7 @@
                 </div>
                 <div class="db5 txt-right">
                     <a id="smiley-btn">☻</a>
-                    <a id=""><b>?</b></a>
+                    <a href="https://github.com/janaeknight/emoji" target="_blank"><b>?</b></a>
                     <a href="https://github.com/janaeknight"><b>X</b></a>
                 </div>
             </div>
@@ -146,19 +145,26 @@
                                 </div>
                                 <p>👬🚢</p>
                                 <input type="input" placeholder="friendship" id="lvl1Input">
-                                <span class="subLvl" id="lvl1Submit">Submit</span>
+                                <span class="subLvl" onClick=lvl1Check()>Submit</span>
                             </div> <!--wrwc1-->
+                            <div id="dbap2">
+                                <div class="row">
+                                    <h3 class="curr-lvl">Level 2 // Compound Words<span id="levelnum"></span></h3>
+                                </div>
+                                <p>🍳🥞</p>
+                                <input type="input" placeholder="..." id="lvl2Input">
+                                <span class="subLvl" onClick=lvl2()>Submit</span>
+                            </div> <!--dbap2-->
+                            
 
                         </div> <!--levelswrapper-->
-                        <div class="row" id="lvls-submenu">
-                            <div class="row">
-                                <div class="db2"></div>
-                                <div class="db4">
-                                    <span class="txt-center" id="hint">hint goes here</span>
-                                </div>
-                                <div class="db4">
-                                    <span class="txt-right" id="menuFromBusy">Main Menu</span>
-                                </div>
+                        <div class="column" id="lvls-submenu">
+                            <div class="">
+                                <span class="txt-center" id="hint">hint goes here</span>
+                            </div>
+                            <br><br>
+                            <div class="">
+                                <span class="txt-center" id="menuFromBusy">Main Menu</span>
                             </div>
                         </div> <!--lvls-submenu-->
                 </div> <!--gamebox-->
@@ -288,6 +294,10 @@
             });
         });
     </script>
-
+    <!-- Game Progress -->
+    <!--
+        See External JS.
+    -->
+    <script src="java/javascript.js"></script>
 </body>
 </html>
