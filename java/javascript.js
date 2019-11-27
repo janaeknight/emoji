@@ -122,10 +122,120 @@ function lvl10Check() {
     let lvl10Input = document.getElementById("lvl10Input").value;
     if (lvl10Input === "honeymoon") {
         lvl10.style.display = "none";
-        lvl10.style.display = "block";
+        lvl11.style.display = "block";
         return true;
     } else {
         lvl10.style.display = "block";
+        return false;
+    };
+};
+function lvl11Check() {
+    let lvl11Input = document.getElementById("lvl11Input").value;
+    if (lvl11Input === "carpool") {
+        lvl11.style.display = "none";
+        lvl12.style.display = "block";
+        return true;
+    } else {
+        lvl11.style.display = "block";
+        return false;
+    };
+};
+function lvl12Check() {
+    let lvl12Input = document.getElementById("lvl12Input").value;
+    if (lvl12Input === "fishnet") {
+        lvl12.style.display = "none";
+        lvl13.style.display = "block";
+        return true;
+    } else {
+        lvl12.style.display = "block";
+        return false;
+    };
+};
+function lvl13Check() {
+    let lvl13Input = document.getElementById("lvl13Input").value;
+    if (lvl13Input === "anthill") {
+        lvl13.style.display = "none";
+        lvl14.style.display = "block";
+        return true;
+    } else {
+        lvl13.style.display = "block";
+        return false;
+    };
+};
+function lvl14Check() {
+    let lvl14Input = document.getElementById("lvl14Input").value;
+    if (lvl14Input === "milk man") {
+        lvl14.style.display = "none";
+        lvl15.style.display = "block";
+        return true;
+    } else {
+        lvl14.style.display = "block";
+        return false;
+    };
+};
+function lvl15Check() {
+    let lvl15Input = document.getElementById("lvl15Input").value;
+    if (lvl15Input === "bowtie") {
+        lvl15.style.display = "none";
+        lvl16.style.display = "block";
+        return true;
+    } else {
+        lvl15.style.display = "block";
+        return false;
+    };
+};
+function lvl16Check() {
+    let lvl16Input = document.getElementById("lvl16Input").value;
+    if (lvl16Input === "fireproof") {
+        lvl16.style.display = "none";
+        lvl17.style.display = "block";
+        return true;
+    } else {
+        lvl16.style.display = "block";
+        return false;
+    };
+};
+function lvl17Check() {
+    let lvl17Input = document.getElementById("lvl17Input").value;
+    if (lvl17Input === "") {
+        lvl17.style.display = "none";
+        lvl18.style.display = "block";
+        return true;
+    } else {
+        lvl17.style.display = "block";
+        return false;
+    };
+};
+function lvl18Check() {
+    let lvl18Input = document.getElementById("lvl18Input").value;
+    if (lvl18Input === "") {
+        lvl18.style.display = "none";
+        lvl19.style.display = "block";
+        return true;
+    } else {
+        lvl18.style.display = "block";
+        return false;
+    };
+};
+function lvl19Check() {
+    let lvl19Input = document.getElementById("lvl19Input").value;
+    if (lvl19Input === "cupcake") {
+        lvl19.style.display = "none";
+        lvl20.style.display = "block";
+        return true;
+    } else {
+        lvl19.style.display = "block";
+        return false;
+    };
+};
+function lvl20Check() {
+    let lvl20Input = document.getElementById("lvl20Input").value;
+    if (lvl20Input === "bullfrog") {
+        lvl20.style.display = "none";
+        lvl20.style.display = "block";
+        return true;
+    } else {
+        lvl20.style.display = "block";
         return false;
     };
 };
