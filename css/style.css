@@ -93,24 +93,35 @@ body {
 }
 .levelswrapper input {
     display: block; margin: 6px auto;
-    width: 585px; height: 50px;
+    width: 585px; height: 45px;
     text-align: center; font-size: 25px;
+    background-color: inherit; border: none;
+    cursor: url(http://cur.cursors-4u.net/smilies/smi-3/smi202.cur), auto !important;
 }
+input:focus, select:focus, textarea:focus, button:focus { outline: none; }
 
-.subLvl {
-    text-align: center;
-    background-color: skyblue;
+.subLvl { display: block; text-align: center; font-size: 17px; padding: 0; margin: 0;}
+.subBtn {
+    background-color: lightsteelblue; padding: 4px 18px;
+    border: 1.5px groove lightslategray;
 }
-
 h3 {
     padding: 0 1px; margin: 0;
     margin-top: 10px;
 }
 
-#hint { display: block; }
-#menuFromBusy { display: block; }
+.hint span { 
+    display: block; 
+    text-align: center; padding-bottom: 5.5px;
+}
+.menuFromBusy { border-top: 1px dashed lightslategray; }
+#menuFromBusy { display: block; padding-top: 10px;}
 
-
-.subLvl { display: block; padding: 0 5px; }
 /*-------------------------------------------------------------------*/
-#dbap2, #crew3, #bbgh4, #jkyg5 { display: none; }
+#dpab2, #crew3, #bbgh4, #jkyg5, #dder6, #iuhv7, #ooie8, #nvjr9, #oin10 { display: none; }
+
+/*
+    Hints:
+*/
+
+#hint1Top, #hint1Bot, #hint2Top, #hint2Bot, #hint3Top, #hint3Bot, #hint4Top, #hint4Bot, #hint5Top, #hint5Bot, #hint6Top, #hint6Bot, #hint7Top, #hint7Bot, #hint8Top, #hint8Bot, #hint9Top, #hint9Bot, #hint10Top, #hint10Bot, #hint11Top, #hint11Bot, #hint12Top, #hint12Bot, #hint13Top, #hint13Bot, #hint14Top, #hint14Bot, #hint15Top, #hint15Bot { display: none; }
