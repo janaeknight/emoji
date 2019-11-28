@@ -164,7 +164,7 @@ function lvl13Check() {
 };
 function lvl14Check() {
     let lvl14Input = document.getElementById("lvl14Input").value;
-    if (lvl14Input === "milk man") {
+    if ( (lvl14Input === "milk man") || (lvl14Input === "milkman") ) {
         lvl14.style.display = "none";
         lvl15.style.display = "block";
         return true;
@@ -197,7 +197,7 @@ function lvl16Check() {
 };
 function lvl17Check() {
     let lvl17Input = document.getElementById("lvl17Input").value;
-    if (lvl17Input === "") {
+    if (lvl17Input === "campfire") {
         lvl17.style.display = "none";
         lvl18.style.display = "block";
         return true;
@@ -208,7 +208,7 @@ function lvl17Check() {
 };
 function lvl18Check() {
     let lvl18Input = document.getElementById("lvl18Input").value;
-    if (lvl18Input === "") {
+    if (lvl18Input === "bluebird") {
         lvl18.style.display = "none";
         lvl19.style.display = "block";
         return true;
