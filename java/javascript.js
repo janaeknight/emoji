@@ -33,7 +33,7 @@ function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl26.style.display = "block";
+        lvl2.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
@@ -317,7 +317,7 @@ function lvl26Check() {
 };
 function lvl27Check() {
     let lvl27Input = document.getElementById("lvl27Input").value;
-    if ( lvl27Input.includes("goldilocks") && lvl27Input.includes("three") && lvl27Input.includes("bears") ) {
+    if ( lvl27Input.includes("goldilocks") ) {
         lvl27.style.display = "none";
         lvl28.style.display = "block";
         return true;

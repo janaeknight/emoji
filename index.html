@@ -41,7 +41,74 @@
                     <span><b>Hint: </b> password ;) </span>
                 </div>
                 <div class="busy" id="cheat-busy">
-                    <span>Some stuff goes here :3</span>
+                    <div class="row">
+                        <div class="db6">
+                            <span class="t1"><b>Levels 1-20</b></span><br>
+                        </div>
+                        <div class="db4"><span class="csNext1" id="csNext1">« Next Page »</span></div>
+                    </div>
+                    <span class="t4">Category: Compound Words</span><br><br>
+                    <div class="row">
+                        <div class="do3">
+                            <span>1 - friendship</span><br>
+                            <span>2 - pancake</span><br>
+                            <span>3 - fireman</span><br>
+                            <span>4 - sunflower</span><br>
+                            <span>5 - mailbox</span><br>
+                            <span>6 - dragonfly</span><br>
+                            <span>7 - earring</span><br>
+                        </div>
+                        <div class="do3">
+                            <span>8 - cartwheel</span><br>
+                            <span>9 - toothbrush</span><br>
+                            <span>10 - honeymoon</span><br>
+                            <span>11 - carpool</span><br>
+                            <span>12 - fishnet</span><br>
+                            <span>13 - anthill</span><br>
+                            <span>14 - milk man</span><br>
+                        </div>
+                        <div class="do3">
+                            <span>15 - bowtie</span><br>
+                            <span>16 - fireproof</span><br>
+                            <span>17 - campfire</span><br>
+                            <span>18 - bluebird</span><br>
+                            <span>19 - cupcake</span><br>
+                            <span>20 - bullfrog</span><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="busy" id="cheat-busy2">
+                    <div class="row">
+                        <div class="db8">
+                            <span class="t1"><b>Levels 21-30</b></span><br>
+                        </div>
+                        <div class="db1">
+                            <span class="csPrev" id="csPrev1">«</span>
+                        </div>
+                        <div class="db1">
+                            <span class="csNext" id="csNext1">»</span>
+                        </div>
+                    </div>
+                    <span class="t4">Category: Children's Fairytales</span><br><br>
+                    <div class="row">
+                        <div class="db5">
+                            <span>21 - three little pigs</span><br>
+                            <span>22 - puss in boots</span><br>
+                            <span>23 - aladdin</span><br>
+                            <span>24 - tortoise and hare</span><br>
+                            <span>25 - the little mermaid</span><br>
+                        </div>
+                        <div class="db5">
+                            <span>26 - red riding hood</span><br>
+                            <span>27 - goldilocks</span><br>
+                            <span>28 - snow white</span><br>
+                            <span>29 - ugly duckling</span><br>
+                            <span>30 - beauty and the beast</span><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="busy" id="cheat-busy3">
+
                 </div>
             </div> <!--cheatsheet-->
     </div> <!-- section divider-->
@@ -359,7 +426,7 @@
                                 <div class="row">
                                     <h3>Level 13 // Compound Words</h3>
                                 </div>
-                                <p>🐜⛰</p>
+                                <p>🐜🗻</p>
                                 <input type="input" placeholder="Type here..." id="lvl13Input">
                                 <div class="subLvl">
                                     <span class="subBtn" onClick=lvl13Check()>Submit</span>
@@ -765,6 +832,24 @@
                     // Animation Jquery
                     $( " #cheatsheet " ).addClass( " .shake-horizontal " );
                 }
+            });
+        });
+        $(function() {
+            $( "#csNext1" ).click(function() {
+                $( "#cheat-busy" ).hide();
+                $( "#cheat-busy2" ).show();
+            });
+        });
+        $(function() {
+            $( "#csNext2" ).click(function() {
+                $( "#cheat-busy2" ).hide();
+                $( "#cheat-busy3" ).show();
+            });
+        });
+        $(function() {
+            $( "#csPrev1" ).click(function() {
+                $( "#cheat-busy2" ).hide();
+                $( "#cheat-busy" ).show();
             });
         });
     </script>
