@@ -28,6 +28,7 @@ let lvl27 = document.getElementById("dxh27");
 let lvl28 = document.getElementById("ihu28");
 let lvl29 = document.getElementById("bui29");
 let lvl30 = document.getElementById("pop30");
+let end = document.getElementById("endgame");
 
 function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
