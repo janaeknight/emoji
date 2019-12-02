@@ -28,13 +28,23 @@ let lvl27 = document.getElementById("dxh27");
 let lvl28 = document.getElementById("ihu28");
 let lvl29 = document.getElementById("bui29");
 let lvl30 = document.getElementById("pop30");
+let lvl31 = document.getElementById("akz31");
+let lvl32 = document.getElementById("koh32");
+let lvl33 = document.getElementById("klf33");
+let lvl34 = document.getElementById("bhe34");
+let lvl35 = document.getElementById("vca35");
+let lvl36 = document.getElementById("nbh36");
+let lvl37 = document.getElementById("mlp37");
+let lvl38 = document.getElementById("wec38");
+let lvl39 = document.getElementById("nfl39");
+let lvl40 = document.getElementById("evs40");
 let end = document.getElementById("endgame");
 
 function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl2.style.display = "block";
+        lvl31.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
@@ -380,3 +390,17 @@ function lvl30Check() {
         return false;
     };
 };*/
+
+function gas() {
+    var mpg = 24;
+    var mtp = 2;
+    var d = 365;
+
+    var mtoy = d*mtp;
+    var gnpy = (mpg/mtp);
+
+    console.log("Miles driven a year: " +mtoy);
+    console.log("Gallons of gas needed a year: " +gnpy,)
+    return;
+}
+gas();
