@@ -404,3 +404,43 @@ function gas() {
     return;
 }
 gas();
+
+
+
+
+
+
+
+
+let arr = [];
+let arr2 = [1, 2, 3, 4];
+console.log(arr2[0]);
+console.log(arr2[4]);
+
+let arr3 = [];
+arr3[2] = "hello";
+arr3[5] = "world";
+console.log(arr3);
+console.log(arr3[0]);
+
+let arr4 = new Array(9).fill(0);
+console.log(arr4);
+console.log(arr2[arr2.length-1]);
+
+let arr5 = [2+3, 5-1, 6*2];
+console.log(arr5);
+
+let arr6 = [
+    [1, 2, 3],
+    [4, 5, 6]
+];
+console.log(arr6[1][0]);
+
+for (let i=0; i<arr6.length; i++) {
+    console.log(arr6[i]);
+    for (let j = 0; j<arr6[i].length; j++) {
+        console.log(arr6[i][j])
+    }
+}
+
+
