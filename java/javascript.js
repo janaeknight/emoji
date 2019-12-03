@@ -439,8 +439,11 @@ console.log(arr6[1][0]);
 for (let i=0; i<arr6.length; i++) {
     console.log(arr6[i]);
     for (let j = 0; j<arr6[i].length; j++) {
-        console.log(arr6[i][j])
-    }
-}
+        console.log(arr6[i][j]);
+        if (j==2) {
+            break;
+        };
+    };
+};
 
 
