@@ -370,7 +370,50 @@ function lvl30Check() {
         return false;
     };
 };
-
+function lvl31Check() {
+    let lvl31Input = document.getElementById("lvl31Input").value;
+    if (lvl31Input === "cinderella" ) {
+        lvl31.style.display = "none";
+        lvl32.style.display = "block";
+        return true;
+    } else {
+        lvl31.style.display = "block";
+        return false;
+    };
+};
+function lvl32Check() {
+    let lvl32Input = document.getElementById("lvl32Input").value;
+    if (lvl32Input.includes("hansel") && lvl32Input.includes("gretel") ) {
+        lvl32.style.display = "none";
+        lvl33.style.display = "block";
+        return true;
+    } else {
+        lvl32.style.display = "block";
+        return false;
+    };
+};
+function lvl33Check() {
+    let lvl33Input = document.getElementById("lvl33Input").value;
+    if (lvl33Input === "sleeping beauty" ) {
+        lvl33.style.display = "none";
+        lvl34.style.display = "block";
+        return true;
+    } else {
+        lvl33.style.display = "block";
+        return false;
+    };
+};
+function lvl34Check() {
+    let lvl34Input = document.getElementById("lvl34Input").value;
+    if (lvl34Input.includes("princess") || lvl34Input.includes("frog") ) {
+        lvl34.style.display = "none";
+        lvl35.style.display = "block";
+        return true;
+    } else {
+        lvl34.style.display = "block";
+        return false;
+    };
+};
 
 
 
@@ -391,6 +434,20 @@ function lvl30Check() {
     };
 };*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function gas() {
     var mpg = 24;
     var mtp = 2;
@@ -404,12 +461,6 @@ function gas() {
     return;
 }
 gas();
-
-
-
-
-
-
 
 
 let arr = [];
