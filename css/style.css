@@ -37,7 +37,7 @@ body {
 .tl a {cursor: url(http://cur.cursors-4u.net/smilies/smi-2/smi198.cur), auto !important;}
 
 /* Cheatsheet Next Buttons */
-.ts span, #csNext1, #csNext2, #csPrev1, .ls-btns span {cursor: url(http://cur.cursors-4u.net/smilies/smi-3/smi203.cur), auto !important;}
+.ts span, #csNext1, #csNext2, #csPrev1, .ls-btns span, .lvlsPgSel span, #backtomenu-btn2, #backtomenu-btn1 {cursor: url(http://cur.cursors-4u.net/smilies/smi-3/smi203.cur), auto !important;}
 .ls-btns { margin-bottom: 20px; }
 .ls-btns.row span { text-decoration: underline; font-size: 21px; padding: 0px 10px; margin: 0 auto; }
 /*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
@@ -126,8 +126,14 @@ h3 {
 .menuFromBusy { border-top: 1px dashed lightslategray; }
 #menuFromBusy { display: block; padding-top: 10px;}
 
+.lvlsPgSel {
+    display: flex; flex-direction: row;
+    width: 590px; margin-top: 20px;
+}
+#backtomenu-btn2, #backtomenu-btn1 { padding-top: 1500px; }
+
 /*-------------------------------------------------------------------*/
-#dpab2, #crew3, #bbgh4, #jkyg5, #dder6, #iuhv7, #ooie8, #nvjr9, #oin10, #yyb11, #neh12, #pqw13, #tce14, #vtv15, #vte16, #uhv17, #nuh18, #erd19, #asd20, #vfm21, #mks22, #gvh23, #mee24, #qbm25, #nuj26, #dxh27, #ihu28, #bui29, #pop30, #akz31, #koh32, #klf33, #bhe34, #vca35, #nbh36, #mlp37, #wec38, #nfl39, #evs40
+#wrwc1, #dpab2, #crew3, #bbgh4, #jkyg5, #dder6, #iuhv7, #ooie8, #nvjr9, #oin10, #yyb11, #neh12, #pqw13, #tce14, #vtv15, #vte16, #uhv17, #nuh18, #erd19, #asd20, #vfm21, #mks22, #gvh23, #mee24, #qbm25, #nuj26, #dxh27, #ihu28, #bui29, #pop30, #akz31, #koh32, #klf33, #bhe34, #vca35, #nbh36, #mlp37, #wec38, #nfl39, #evs40
 
 { display: none; }
 
