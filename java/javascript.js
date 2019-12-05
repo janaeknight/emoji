@@ -94,7 +94,7 @@ function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl37.style.display = "block";
+        lvl35.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
@@ -497,32 +497,149 @@ function lvl37Check() {
         return false;
     };
 };
-/*function lvl-Check() {
-    let lvl-Input = document.getElementById("lvl-Input").value;
-    if ( lvl-Input.includes("") ) {
-        lvl-.style.display = "none";
-        lvl-.style.display = "block";
+function lvl38Check() {
+    let lvl38Input = document.getElementById("lvl38Input").value;
+    if ( lvl37Input.includes("accessible") && ( (lvl37Input.includes("handicap")) || (lvl37Input.includes("wheelchair")) ) ) {
+        lvl38.style.display = "none";
+        lvl39.style.display = "block";
         return true;
     } else {
-        lvl-.style.display = "block";
+        lvl38.style.display = "block";
         return false;
     };
 };
-function lvl-Check() {
-    let lvl-Input = document.getElementById("lvl-Input").value;
-    if ( lvl-Input.includes("") ) {
-        lvl-.style.display = "none";
-        lvl-.style.display = "block";
+function lvl39Check() {
+    let lvl39Input = document.getElementById("lvl39Input").value;
+    if ( lvl39Input==="free wifi" ) {
+        lvl39.style.display = "none";
+        lvl40.style.display = "block";
         return true;
     } else {
-        lvl-.style.display = "block";
+        lvl39.style.display = "block";
         return false;
     };
-};*/
-
-
-
-
+};
+function lvl40Check() {
+    let lvl40Input = document.getElementById("lvl40Input").value;
+    if (lvl40Input === "rock on") {
+        lvl40.style.display = "none";
+        lvl41.style.display = "block";
+        return true;
+    } else {
+        lvl40.style.display = "block";
+        return false;
+    };
+};
+function lvl41Check() {
+    let lvl41Input = document.getElementById("lvl41Input").value;
+    if (lvl41Input === "i believe you") {
+        lvl41.style.display = "none";
+        lvl42.style.display = "block";
+        return true;
+    } else {
+        lvl41.style.display = "block";
+        return false;
+    };
+};
+function lvl42Check() {
+    let lvl42Input = document.getElementById("lvl42Input").value;
+    if (lvl42Input.includes("music") && (lvl42Input.includes("ear") || lvl42Input.includes("ears")) ) {
+        lvl42.style.display = "none";
+        lvl43.style.display = "block";
+        return true;
+    } else {
+        lvl42.style.display = "block";
+        return false;
+    };
+};
+function lvl43Check() {
+    let lvl43Input = document.getElementById("lvl43Input").value;
+    if (lvl43Input.includes("blessed") ) {
+        lvl43.style.display = "none";
+        lvl44.style.display = "block";
+        return true;
+    } else {
+        lvl43.style.display = "block";
+        return false;
+    };
+};
+function lvl44Check() {
+    let lvl44Input = document.getElementById("lvl44Input").value;
+    if (lvl44Input === "happy halloween") {
+        lvl44.style.display = "none";
+        lvl45.style.display = "block";
+        return true;
+    } else {
+        lvl44.style.display = "block";
+        return false;
+    };
+};
+function lvl45Check() {
+    let lvl45Input = document.getElementById("lvl45Input").value;
+    if (lvl45Input === "i love pizza") {
+        lvl45.style.display = "none";
+        lvl46.style.display = "block";
+        return true;
+    } else {
+        lvl45.style.display = "block";
+        return false;
+    };
+};
+function lvl46Check() {
+    let lvl46Input = document.getElementById("lvl46Input").value;
+    if (lvl46Input.includes("night") && lvl46Input.includes("out") && (lvl46Input.includes("girl") || lvl46Input.includes("girls")) ) {
+        lvl46.style.display = "none";
+        lvl47.style.display = "block";
+        return true;
+    } else {
+        lvl46.style.display = "block";
+        return false;
+    };
+};
+function lvl47Check() {
+    let lvl47Input = document.getElementById("lvl47Input").value;
+    if (lvl47Input.includes("news") && (lvl47Input.includes("hear") || lvl47Input.includes("heard")) ) {
+        lvl47.style.display = "none";
+        lvl48.style.display = "block";
+        return true;
+    } else {
+        lvl47.style.display = "block";
+        return false;
+    };
+};
+function lvl48Check() {
+    let lvl48Input = document.getElementById("lvl48Input").value;
+    if (lvl48Input.includes("cross") && lvl48Input.includes("heart") ) {
+        lvl48.style.display = "none";
+        lvl49.style.display = "block";
+        return true;
+    } else {
+        lvl48.style.display = "block";
+        return false;
+    };
+};
+function lvl49Check() {
+    let lvl49Input = document.getElementById("lvl49Input").value;
+    if ( (lvl49Input.includes("time") || lvl49Input.includes("time's")) && (lvl49Input.includes("run") || (lvl49Input.includes("running")) || (lvl49Input.includes("ran"))) && lvl49Input.includes("out")) {
+        lvl49.style.display = "none";
+        lvl50.style.display = "block";
+        return true;
+    } else {
+        lvl49.style.display = "block";
+        return false;
+    };
+};
+function lvl50Check() {
+    let lvl50Input = document.getElementById("lvl50Input").value;
+    if (lvl50Input === "") {
+        lvl50.style.display = "none";
+        lvl51.style.display = "block";
+        return true;
+    } else {
+        lvl50.style.display = "block";
+        return false;
+    };
+};
 
 
 
@@ -602,4 +719,46 @@ for (let i=0; i<arr6.length; i++) {
     };
 };
 
+
+function game() {
+    if (option1) {
+        if (optionOne1) {
+            // do the option 1-1 thing
+        } else if (optionOne2) {
+            // do the option 1-2 thing
+        } else {
+            // do the other option 1 thing
+        }
+    }; //option1
+
+    if (option2) {
+        if (optionTwo1) {
+                // do the option 2-1 thing
+            } else if (optionTwo2) {
+                // do the option 2-2 thing
+            } else {
+                // do the other option 2 thing
+            }
+    }; //option2
+
+    if (option3) {
+        if (optionThree3) {
+            // do the option 3-1 thing
+        } else if (optionThree2) {
+            // do the option 3-2 thing
+        } else {
+            // do the other option 3 thing
+        }
+    }; //option3
+
+    if (option4) {
+        if (optionFour1) {
+            // do the option 4-1 thing
+        } else if (optionFour2) {
+            // do the option 4-2 thing
+        } else {
+            // do the other option 4 thing
+        }
+    }; //option4
+};
 
