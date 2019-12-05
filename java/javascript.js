@@ -38,13 +38,63 @@ let lvl37 = document.getElementById("mlp37");
 let lvl38 = document.getElementById("wec38");
 let lvl39 = document.getElementById("nfl39");
 let lvl40 = document.getElementById("evs40");
+let lvl41 = document.getElementById("fgh41");
+let lvl42 = document.getElementById("ery42");
+let lvl43 = document.getElementById("gvh43");
+let lvl44 = document.getElementById("bug44");
+let lvl45 = document.getElementById("ohb45");
+let lvl46 = document.getElementById("nnj46");
+let lvl47 = document.getElementById("lld47");
+let lvl48 = document.getElementById("dcw48");
+let lvl49 = document.getElementById("rfv49");
+let lvl50 = document.getElementById("bvy50");
+let lvl51 = document.getElementById("ubj51");
+let lvl52 = document.getElementById("nhg52");
+let lvl53 = document.getElementById("pjd53");
+let lvl54 = document.getElementById("btg54");
+let lvl55 = document.getElementById("ska55");
+let lvl56 = document.getElementById("ebs56");
+let lvl57 = document.getElementById("pls57");
+let lvl58 = document.getElementById("laj58");
+let lvl59 = document.getElementById("lsc59");
+let lvl60 = document.getElementById("ojn60");
+let lvl61 = document.getElementById("jen61");
+let lvl62 = document.getElementById("alb62");
+let lvl63 = document.getElementById("psl63");
+let lvl64 = document.getElementById("oks64");
+let lvl65 = document.getElementById("qsx65");
+let lvl66 = document.getElementById("cbe66");
+let lvl67 = document.getElementById("msm67");
+let lvl68 = document.getElementById("dnw68");
+let lvl69 = document.getElementById("owd69");
+let lvl70 = document.getElementById("wjw70");
+let lvl71 = document.getElementById("bhc71");
+let lvl72 = document.getElementById("ihs72");
+let lvl73 = document.getElementById("qms73");
+let lvl74 = document.getElementById("pkw74");
+let lvl75 = document.getElementById("biw75");
+let lvl76 = document.getElementById("lsa76");
+let lvl77 = document.getElementById("sfg77");
+let lvl78 = document.getElementById("yvf78");
+let lvl79 = document.getElementById("nkh79");
+let lvl80 = document.getElementById("cgm80");
+let lvl81 = document.getElementById("ojb81");
+let lvl82 = document.getElementById("nkh82");
+let lvl83 = document.getElementById("esx83");
+let lvl84 = document.getElementById("miu84");
+let lvl85 = document.getElementById("plj85");
+let lvl86 = document.getElementById("brs86");
+let lvl87 = document.getElementById("mbh87");
+let lvl88 = document.getElementById("ioj88");
+let lvl89 = document.getElementById("wwe89");
+let lvl90 = document.getElementById("hgb90");
 let end = document.getElementById("endgame");
 
 function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl31.style.display = "block";
+        lvl37.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
@@ -414,6 +464,61 @@ function lvl34Check() {
         return false;
     };
 };
+function lvl35Check() {
+    let lvl35Input = document.getElementById("lvl35Input").value;
+    if (lvl35Input === "turn up the music") {
+        lvl35.style.display = "none";
+        lvl36.style.display = "block";
+        return true;
+    } else {
+        lvl35.style.display = "block";
+        return false;
+    };
+};
+function lvl36Check() {
+    let lvl36Input = document.getElementById("lvl36Input").value;
+    if ( lvl36Input.includes("baby") && lvl36Input.includes("cold") && lvl36Input.includes("outside") ) {
+        lvl36.style.display = "none";
+        lvl37.style.display = "block";
+        return true;
+    } else {
+        lvl36.style.display = "block";
+        return false;
+    };
+};
+function lvl37Check() {
+    let lvl37Input = document.getElementById("lvl37Input").value;
+    if ( lvl37Input.includes("no") && ( (lvl37Input.includes("photos")) || (lvl37Input.includes("pictures")) ) ) {
+        lvl37.style.display = "none";
+        lvl38.style.display = "block";
+        return true;
+    } else {
+        lvl37.style.display = "block";
+        return false;
+    };
+};
+/*function lvl-Check() {
+    let lvl-Input = document.getElementById("lvl-Input").value;
+    if ( lvl-Input.includes("") ) {
+        lvl-.style.display = "none";
+        lvl-.style.display = "block";
+        return true;
+    } else {
+        lvl-.style.display = "block";
+        return false;
+    };
+};
+function lvl-Check() {
+    let lvl-Input = document.getElementById("lvl-Input").value;
+    if ( lvl-Input.includes("") ) {
+        lvl-.style.display = "none";
+        lvl-.style.display = "block";
+        return true;
+    } else {
+        lvl-.style.display = "block";
+        return false;
+    };
+};*/
 
 
 
