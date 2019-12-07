@@ -639,7 +639,7 @@ function lvl50Check() {
         lvl50.style.display = "block";
         return false;
     };
-};
+}; 
 
 
 
