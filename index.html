@@ -219,6 +219,9 @@
                 </div><!--instructions-->
                 <div id="level-select">
                     <span id="backtomenu-btn2">〱 Back to Menu </span><br>
+                    <div id="lvls-un">
+                        <h1 class="txt-center">Level Selection is currently unavailable.</h1>
+                    </div>
                     <div id="lvls-p1" class="column txt-center">
                         <h1>Level Select</h1>
                         <div class="ls-btns row">
@@ -1072,7 +1075,7 @@
                                 <p>🤘🏽🔛</p>
                                 <input type="input" placeholder="Type here..." id="lvl40Input">
                                 <div class="subLvl">
-                                    <span class="subBtn" onClick=lvl49Check()>Submit</span>
+                                    <span class="subBtn" onClick=lvl40Check()>Submit</span>
                                 </div><br>
                                 <div class="hint">
                                     <span id="hintForty1">« Hint 1 »</span>
@@ -1329,7 +1332,8 @@
             $( "#level-btn" ).click(function() {
                 $( "#start" ).hide();
                 $( "#level-select" ).show();
-                $( "#lvls-p1" ).show();
+                $( "#lvls-un" ).show();
+                /*$( "#lvls-p1" ).show();*/
             });
         });
         $(function() {

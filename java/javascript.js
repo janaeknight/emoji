@@ -94,7 +94,7 @@ function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl35.style.display = "block";
+        lvl40.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
@@ -499,7 +499,7 @@ function lvl37Check() {
 };
 function lvl38Check() {
     let lvl38Input = document.getElementById("lvl38Input").value;
-    if ( lvl37Input.includes("accessible") && ( (lvl37Input.includes("handicap")) || (lvl37Input.includes("wheelchair")) ) ) {
+    if ( lvl38Input.includes("accessible") && ( (lvl38Input.includes("handicap")) || (lvl38Input.includes("wheelchair")) ) ) {
         lvl38.style.display = "none";
         lvl39.style.display = "block";
         return true;
