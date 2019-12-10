@@ -94,12 +94,31 @@ let lvls = document.getElementById("level-select");
 let gmb = document.getElementById("gamebox");
 
 let arr = [lvl1, lvl2];
+
 function toLvl1() {
     lvls.style.display = "none";
     gmb.style.display = "block";
-    arr.style.display = "none";
-    lvl2.style.display = "block";
+    arr[0].style.display = "none";
+    lvl1.style.display = "block";
 
+}
+
+const levels = [...document.querySelectorAll('.levelSelect')];
+const levelsGame = document.querySelectorAll('.level');
+for (const level of levels) {
+    level.addEventListener('click', showLevel);
+}
+
+function showLevel() {
+    // hide everything first
+    for (const game of levelsGame) {
+        game.style.display = "none";
+    }
+    let level = levels.indexOf(this);
+    let game = levelsGame[level];
+    lvls.style.display = "none";
+    gmb.style.display = "block";
+    game.style.display = 'block';
 }
 
 /*****************************/
@@ -110,7 +129,7 @@ function lvl1Check() {
         lvl2.style.display = "block";
         return true;
     } else {
-        lvl1.style.display = "block";
+        lvl2.style.display = "block";
         return false;
     };
 };
