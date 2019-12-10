@@ -94,7 +94,7 @@ function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl40.style.display = "block";
+        lvl50.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
