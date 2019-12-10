@@ -225,8 +225,8 @@
                     <div id="lvls-p1" class="column txt-center">
                         <h1>Level Select</h1>
                         <div class="ls-btns row">
-                            <span id="toLvl1">1</span>
-                            <span id="toLvl2">2</span>
+                            <span onclick="toLvl1()">1</span>
+                            <span onclick="toLvl2()">2</span>
                             <span id="toLvl3">3</span>
                             <span id="toLvl4">4</span>
                             <span id="toLvl5">5</span>
@@ -1460,8 +1460,8 @@
             $( "#level-btn" ).click(function() {
                 $( "#start" ).hide();
                 $( "#level-select" ).show();
-                $( "#lvls-un" ).show();
-                /*$( "#lvls-p1" ).show();*/
+                /*$( "#lvls-un" ).show();*/
+                $( "#lvls-p1" ).show();
             });
         });
         $(function() {

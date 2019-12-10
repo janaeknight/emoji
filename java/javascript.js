@@ -90,11 +90,24 @@ let lvl89 = document.getElementById("wwe89");
 let lvl90 = document.getElementById("hgb90");
 let end = document.getElementById("endgame");
 
+let lvls = document.getElementById("level-select");
+let gmb = document.getElementById("gamebox");
+
+let arr = [lvl1, lvl2];
+function toLvl1() {
+    lvls.style.display = "none";
+    gmb.style.display = "block";
+    arr.style.display = "none";
+    lvl2.style.display = "block";
+
+}
+
+/*****************************/
 function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl50.style.display = "block";
+        lvl2.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
@@ -668,97 +681,4 @@ function lvl50Check() {
 
 
 
-
-
-function gas() {
-    var mpg = 24;
-    var mtp = 2;
-    var d = 365;
-
-    var mtoy = d*mtp;
-    var gnpy = (mpg/mtp);
-
-    console.log("Miles driven a year: " +mtoy);
-    console.log("Gallons of gas needed a year: " +gnpy,)
-    return;
-}
-gas();
-
-
-let arr = [];
-let arr2 = [1, 2, 3, 4];
-console.log(arr2[0]);
-console.log(arr2[4]);
-
-let arr3 = [];
-arr3[2] = "hello";
-arr3[5] = "world";
-console.log(arr3);
-console.log(arr3[0]);
-
-let arr4 = new Array(9).fill(0);
-console.log(arr4);
-console.log(arr2[arr2.length-1]);
-
-let arr5 = [2+3, 5-1, 6*2];
-console.log(arr5);
-
-let arr6 = [
-    [1, 2, 3],
-    [4, 5, 6]
-];
-console.log(arr6[1][0]);
-
-for (let i=0; i<arr6.length; i++) {
-    console.log(arr6[i]);
-    for (let j = 0; j<arr6[i].length; j++) {
-        console.log(arr6[i][j]);
-        if (j==2) {
-            break;
-        };
-    };
-};
-
-
-function game() {
-    if (option1) {
-        if (optionOne1) {
-            // do the option 1-1 thing
-        } else if (optionOne2) {
-            // do the option 1-2 thing
-        } else {
-            // do the other option 1 thing
-        }
-    }; //option1
-
-    if (option2) {
-        if (optionTwo1) {
-                // do the option 2-1 thing
-            } else if (optionTwo2) {
-                // do the option 2-2 thing
-            } else {
-                // do the other option 2 thing
-            }
-    }; //option2
-
-    if (option3) {
-        if (optionThree3) {
-            // do the option 3-1 thing
-        } else if (optionThree2) {
-            // do the option 3-2 thing
-        } else {
-            // do the other option 3 thing
-        }
-    }; //option3
-
-    if (option4) {
-        if (optionFour1) {
-            // do the option 4-1 thing
-        } else if (optionFour2) {
-            // do the option 4-2 thing
-        } else {
-            // do the other option 4 thing
-        }
-    }; //option4
-};
 
