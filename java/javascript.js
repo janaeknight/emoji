@@ -134,7 +134,7 @@ function lvl1Check() {
         lvl51.style.display = "block";
         return true;
     } else {
-        lvl2.style.display = "block";
+        lvl1.style.display = "block";
         return false;
     };
 };
