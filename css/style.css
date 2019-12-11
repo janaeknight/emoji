@@ -21,7 +21,7 @@ body {
 
 .window {
     width: 600px; height: 400px; background-color: lightcyan;
-    margin: 20% auto; z-index: 1;
+    margin: 105px auto; z-index: 1;
     border: 1px groove grey; outline: 2px inset gray;
 }
 .taskbar {

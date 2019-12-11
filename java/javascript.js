@@ -90,18 +90,14 @@ let lvl89 = document.getElementById("wwe89");
 let lvl90 = document.getElementById("hgb90");
 let end = document.getElementById("endgame");
 
+let start = document.getElementById("start");
 let lvls = document.getElementById("level-select");
+let lvls2 = document.getElementById("lvls-p2");
 let gmb = document.getElementById("gamebox");
 
-let arr = [lvl1, lvl2];
-
-function toLvl1() {
-    lvls.style.display = "none";
-    gmb.style.display = "block";
-    arr[0].style.display = "none";
-    lvl1.style.display = "block";
-
-}
+/*
+    BRYCE
+*/
 
 const levels = [...document.querySelectorAll('.levelSelect')];
 const levelsGame = document.querySelectorAll('.level');
@@ -111,6 +107,7 @@ for (const level of levels) {
 
 function showLevel() {
     // hide everything first
+    lvls2.style.display = "none";
     for (const game of levelsGame) {
         game.style.display = "none";
     }
@@ -120,7 +117,15 @@ function showLevel() {
     gmb.style.display = "block";
     game.style.display = 'block';
 }
-
+/*****************************/
+function startgame() {
+    for (const game of levelsGame) {
+        game.style.display = "none";
+    }
+    start.style.display = "none";
+    gmb.style.display = "block";
+    lvl1.style.display = "block";
+}
 /*****************************/
 function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
@@ -687,17 +692,3 @@ function lvl50Check() {
         return false;
     };
 };*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
