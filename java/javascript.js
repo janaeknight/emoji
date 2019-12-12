@@ -131,7 +131,7 @@ function lvl1Check() {
     let lvl1Input = document.getElementById("lvl1Input").value;
     if (lvl1Input === "friendship") {
         lvl1.style.display = "none";
-        lvl51.style.display = "block";
+        lvl2.style.display = "block";
         return true;
     } else {
         lvl1.style.display = "block";
@@ -732,7 +732,7 @@ function lvl55Check() {
         return false;
     };
 };
-function lv56Check() {
+function lvl56Check() {
     let lvl56Input = document.getElementById("lvl56Input").value;
     if (lvl56Input.includes("piece") && lvl56Input.includes("cake")) {
         lvl56.style.display = "none";
