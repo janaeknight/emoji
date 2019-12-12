@@ -66,6 +66,11 @@ body {
     border: 1px groove grey; outline: 2px inset gray;  
 }
 
+form#smileForm { margin: 0 auto; text-align: center; padding-top: 5px; }
+form#smileForm textarea { 
+    max-width: 205.5px; margin: 5px auto;
+    max-height: 162px;
+}
 /*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
 
 .credit {

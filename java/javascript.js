@@ -97,8 +97,10 @@ let gmb = document.getElementById("gamebox");
 
 /*
     BRYCE
+    smZI()
+    chZI()
+    wiZI()
 */
-
 const levels = [...document.querySelectorAll('.levelSelect')];
 const levelsGame = document.querySelectorAll('.level');
 for (const level of levels) {
