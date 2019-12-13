@@ -417,7 +417,7 @@ function lvl26Check() {
 };
 function lvl27Check() {
     let lvl27Input = document.getElementById("lvl27Input").value;
-    if ( lvl27Input.includes("goldilocks") ) {
+    if ( lvl27Input.includes("goldilocks") || lvl27Input.includes("three")|| lvl27Input.includes("bears") ) {
         lvl27.style.display = "none";
         lvl28.style.display = "block";
         return true;
