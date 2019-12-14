@@ -37,7 +37,7 @@ body {
 .tl a {cursor: url(http://cur.cursors-4u.net/smilies/smi-2/smi198.cur), auto !important;}
 
 /* Cheatsheet Next Buttons */
-.ts span, .csNext, .csPrev, .ls-btns span, .lvlsPgSel span, #backtomenu-btn2, #backtomenu-btn1 {cursor: url(http://cur.cursors-4u.net/smilies/smi-3/smi203.cur), auto !important;}
+.ts span, #level-btn, .csNext, .csPrev, .ls-btns span, .lvlsPgSel span, #backtomenu-btn2, #backtomenu-btn1 {cursor: url(http://cur.cursors-4u.net/smilies/smi-3/smi203.cur), auto !important;}
 .ls-btns { margin-bottom: 20px; }
 .ls-btns.row span { text-decoration: underline; font-size: 21px; padding: 0px 10px; margin: 0 auto; }
 /*=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~=-~*/
