@@ -1195,7 +1195,7 @@ function lvl95Check() {
     };
 };
 function lvl96Check() {
-    let lvl96Input = document.getElementById("lv96Input").value;
+    let lvl96Input = document.getElementById("lvl96Input").value;
     if (lvl96Input.includes("chik") && lvl96Input.includes("fil")) {
         lvl96.style.display = "none";
         lvl97.style.display = "block";
@@ -1242,7 +1242,7 @@ function lvl100Check() {
     let lvl100Input = document.getElementById("lvl100Input").value;
     if (lvl100Input.includes("microsoft") || lvl100Input.includes("windows") ) {
         lvl100.style.display = "none";
-        lvlend.style.display = "block";
+        end.style.display = "block";
         return true;
     } else {
         lvl100.style.display = "block";

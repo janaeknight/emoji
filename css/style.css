@@ -42,7 +42,7 @@ body {
 .e3 { font-size: 34px; }    .t3 { font-size: 180px; }   .t4 { font-size: 16px; }
 .t5 { font-size: 14.5px !important; }
 .t6 { font-size: 20px !important; }
-
+.t7 { font-size: 17.5px !important; }
 .busy { margin: 5px; display: flex; flex-direction: column; }
 .busy a { text-decoration: none; color: black; }
 
@@ -145,7 +145,7 @@ h3 {
 */
 
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 749px) {
     body { width: 85vw; height: 90vh; margin: 0 auto; }
     #m-l, #m-m, #m-r { display: none; }
     #mobil {
