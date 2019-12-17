@@ -144,6 +144,7 @@ function startgame() {
         gmb.style.display = "block";
         lvl1.style.display = "block";
         stp =+ 1;
+        document.getElementById('stgtxt').innerHTML = "> Back to Game";
         console.log(stp)
     }
 }
