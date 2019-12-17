@@ -877,7 +877,7 @@ function lvl66Check() {
 };
 function lvl67Check() {
     let lvl67Input = document.getElementById("lvl67Input").value;
-    if (lvl67Input === "corndog") {
+    if (lvl67Input.includes("corn") && lvl67Input.includes("dog")) {
         lvl67.style.display = "none";
         lvl68.style.display = "block";
         return true;
@@ -1044,7 +1044,7 @@ function lvl82Check() {
     let lvl82Input = document.getElementById("lvl82Input").value;
     if (lvl82Input === "asia") {
         lvl82.style.display = "none";
-        lvl81.style.display = "block";
+        lvl83.style.display = "block";
         return true;
     } else {
         lvl82.style.display = "block";
@@ -1075,7 +1075,7 @@ function lvl84Check() {
 };
 function lvl85Check() {
     let lvl85Input = document.getElementById("lvl85Input").value;
-    if (lvl85Input === "anartica") {
+    if (lvl85Input === "antarctica") {
         lvl85.style.display = "none";
         lvl86.style.display = "block";
         return true;
