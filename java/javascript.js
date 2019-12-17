@@ -1,3 +1,8 @@
+/*
+        BUGS: 
+            // On click events with text input respond negatively to using the enter key >:(
+            // Wtf you always have to type in lowercase because im dumb
+*/
 let lvl1 = document.getElementById("wrwc1");
 let lvl2 = document.getElementById("dpab2");
 let lvl3 = document.getElementById("crew3");
@@ -104,7 +109,7 @@ let start = document.getElementById("start");
 let lvls = document.getElementById("level-select");
 let lvls2 = document.getElementById("lvls-p2");
 let gmb = document.getElementById("gamebox");
-
+var stp = 0;
 /*
     BRYCE
     smZI()
@@ -132,12 +137,16 @@ function showLevel() {
 }
 /*****************************/
 function startgame() {
-    for (const game of levelsGame) {
-        game.style.display = "none";
-    }
     start.style.display = "none";
     gmb.style.display = "block";
-    lvl1.style.display = "block";
+    if (stp >= 1) {
+        gmb.style.display = "block";
+    } else {
+        gmb.style.display = "block";
+        lvl1.style.display = "block";
+        stp =+ 1;
+        console.log(stp)
+    }
 }
 /*****************************/
 function lvl1Check() {
