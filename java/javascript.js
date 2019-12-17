@@ -111,6 +111,7 @@ let lvls = document.getElementById("level-select");
 let lvls2 = document.getElementById("lvls-p2");
 let gmb = document.getElementById("gamebox");
 var stp = 0;
+var ltp = 0;
 /*
     BRYCE
     smZI()
@@ -129,6 +130,8 @@ function showLevel() {
     lvls2.style.display = "none";
     for (const game of levelsGame) {
         game.style.display = "none";
+        ltp =+ 1;
+        console.log(ltp);
     }
     let level = levels.indexOf(this);
     let game = levelsGame[level];
@@ -139,7 +142,7 @@ function showLevel() {
 /*****************************/
 function startgame() {
     start.style.display = "none";
-    if (stp >= 1) {
+    if (stp >= 1 || ltp>=1 ) {
         gmb.style.display = "block";
     } else {
         gmb.style.display = "block";
