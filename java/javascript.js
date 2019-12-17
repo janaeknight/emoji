@@ -138,7 +138,6 @@ function showLevel() {
 /*****************************/
 function startgame() {
     start.style.display = "none";
-    gmb.style.display = "block";
     if (stp >= 1) {
         gmb.style.display = "block";
     } else {
