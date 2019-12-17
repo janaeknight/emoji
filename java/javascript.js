@@ -2,6 +2,7 @@
         BUGS: 
             // On click events with text input respond negatively to using the enter key >:(
             // Wtf you always have to type in lowercase because im dumb
+            // LOL @the_layering
 */
 let lvl1 = document.getElementById("wrwc1");
 let lvl2 = document.getElementById("dpab2");
