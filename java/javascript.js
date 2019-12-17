@@ -1018,15 +1018,234 @@ function lvl79Check() {
         return false;
     };
 };
-
-/*function lvl-Check() {
-    let lvl-Input = document.getElementById("lvl-Input").value;
-    if (lvl-Input === "") {
-        lvl-.style.display = "none";
-        lvl-.style.display = "block";
+function lvl80Check() {
+    let lvl80Input = document.getElementById("lvl80Input").value;
+    if (lvl80Input === "africa") {
+        lvl80.style.display = "none";
+        lvl81.style.display = "block";
         return true;
     } else {
-        lvl-.style.display = "block";
+        lvl80.style.display = "block";
         return false;
     };
-};*/
+};
+function lvl81Check() {
+    let lvl81Input = document.getElementById("lvl81Input").value;
+    if (lvl81Input === "north america") {
+        lvl81.style.display = "none";
+        lvl82.style.display = "block";
+        return true;
+    } else {
+        lvl81.style.display = "block";
+        return false;
+    };
+};
+function lvl82Check() {
+    let lvl82Input = document.getElementById("lvl82Input").value;
+    if (lvl82Input === "asia") {
+        lvl82.style.display = "none";
+        lvl81.style.display = "block";
+        return true;
+    } else {
+        lvl82.style.display = "block";
+        return false;
+    };
+};
+function lvl83Check() {
+    let lvl83Input = document.getElementById("lvl83Input").value;
+    if (lvl83Input === "europe") {
+        lvl83.style.display = "none";
+        lvl84.style.display = "block";
+        return true;
+    } else {
+        lvl83.style.display = "block";
+        return false;
+    };
+};
+function lvl84Check() {
+    let lvl84Input = document.getElementById("lvl84Input").value;
+    if (lvl84Input === "south america") {
+        lvl84.style.display = "none";
+        lvl85.style.display = "block";
+        return true;
+    } else {
+        lvl84.style.display = "block";
+        return false;
+    };
+};
+function lvl85Check() {
+    let lvl85Input = document.getElementById("lvl85Input").value;
+    if (lvl85Input === "anartica") {
+        lvl85.style.display = "none";
+        lvl86.style.display = "block";
+        return true;
+    } else {
+        lvl85.style.display = "block";
+        return false;
+    };
+};
+function lvl86Check() {
+    let lvl86Input = document.getElementById("lvl86Input").value;
+    if (lvl86Input === "australia") {
+        lvl86.style.display = "none";
+        lvl87.style.display = "block";
+        return true;
+    } else {
+        lvl86.style.display = "block";
+        return false;
+    };
+};
+function lvl87Check() {
+    let lvl87Input = document.getElementById("lvl87Input").value;
+    if (lvl87Input.includes("chinese") && lvl87Input.includes("year")) {
+        lvl87.style.display = "none";
+        lvl88.style.display = "block";
+        return true;
+    } else {
+        lvl87.style.display = "block";
+        return false;
+    };
+};
+function lvl88Check() {
+    let lvl88Input = document.getElementById("lvl88Input").value;
+    if (lvl88Input.includes("hanukkah")) {
+        lvl88.style.display = "none";
+        lvl89.style.display = "block";
+        return true;
+    } else {
+        lvl88.style.display = "block";
+        return false;
+    };
+};
+function lvl89Check() {
+    let lvl89Input = document.getElementById("lvl89Input").value;
+    if (lvl89Input.includes("marriage") || lvl89Input.includes("wed") ) {
+        lvl89.style.display = "none";
+        lvl90.style.display = "block";
+        return true;
+    } else {
+        lvl89.style.display = "block";
+        return false;
+    };
+};
+function lvl90Check() {
+    let lvl90Input = document.getElementById("lvl90Input").value;
+    if (lvl90Input.includes("easter")) {
+        lvl90.style.display = "none";
+        lvl91.style.display = "block";
+        return true;
+    } else {
+        lvl90.style.display = "block";
+        return false;
+    };
+};
+function lvl91Check() {
+    let lvl91Input = document.getElementById("lvl91Input").value;
+    if (lvl91Input.includes("ramadan")) {
+        lvl91.style.display = "none";
+        lvl92.style.display = "block";
+        return true;
+    } else {
+        lvl91.style.display = "block";
+        return false;
+    };
+};
+function lvl92Check() {
+    let lvl92Input = document.getElementById("lvl92Input").value;
+    if (lvl92Input === ("earth day")) {
+        lvl92.style.display = "none";
+        lvl93.style.display = "block";
+        return true;
+    } else {
+        lvl92.style.display = "block";
+        return false;
+    };
+};
+function lvl93Check() {
+    let lvl93Input = document.getElementById("lvl93Input").value;
+    if (lvl93Input.includes("diwali")) {
+        lvl93.style.display = "none";
+        lvl94.style.display = "block";
+        return true;
+    } else {
+        lvl93.style.display = "block";
+        return false;
+    };
+};
+function lvl94Check() {
+    let lvl94Input = document.getElementById("lvl94Input").value;
+    if (lvl94Input.includes("day") && lvl94Input.includes("dead") ) {
+        lvl94.style.display = "none";
+        lvl95.style.display = "block";
+        return true;
+    } else {
+        lvl94.style.display = "block";
+        return false;
+    };
+};
+function lvl95Check() {
+    let lvl95Input = document.getElementById("lvl95Input").value;
+    if (lvl95Input.includes("apple")) {
+        lvl95.style.display = "none";
+        lvl96.style.display = "block";
+        return true;
+    } else {
+        lvl95.style.display = "block";
+        return false;
+    };
+};
+function lvl96Check() {
+    let lvl96Input = document.getElementById("lv96Input").value;
+    if (lvl96Input.includes("chik") && lvl96Input.includes("fil")) {
+        lvl96.style.display = "none";
+        lvl97.style.display = "block";
+        return true;
+    } else {
+        lvl96.style.display = "block";
+        return false;
+    };
+};
+function lvl97Check() {
+    let lvl97Input = document.getElementById("lvl97Input").value;
+    if (lvl97Input.includes("donald")) {
+        lvl97.style.display = "none";
+        lvl98.style.display = "block";
+        return true;
+    } else {
+        lvl97.style.display = "block";
+        return false;
+    };
+};
+function lvl98Check() {
+    let lvl98Input = document.getElementById("lvl98Input").value;
+    if (lvl98Input.includes("amazon")) {
+        lvl98.style.display = "none";
+        lvl99.style.display = "block";
+        return true;
+    } else {
+        lvl98.style.display = "block";
+        return false;
+    };
+};
+function lvl99Check() {
+    let lvl99Input = document.getElementById("lvl99Input").value;
+    if (lvl99Input.includes("sprint")) {
+        lvl99.style.display = "none";
+        lvl100.style.display = "block";
+        return true;
+    } else {
+        lvl99.style.display = "block";
+        return false;
+    };
+};
+function lvl100Check() {
+    let lvl100Input = document.getElementById("lvl100Input").value;
+    if (lvl100Input.includes("microsoft") || lvl100Input.includes("windows") ) {
+        lvl100.style.display = "none";
+        lvlend.style.display = "block";
+        return true;
+    } else {
+        lvl100.style.display = "block";
+        return false;
+    };
+};
