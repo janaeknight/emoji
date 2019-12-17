@@ -148,7 +148,7 @@ h3 {
     body { width: 85vw; height: 90vh; margin: 0 auto; }
     #m-l, #m-m, #m-r { display: none; }
     #mobil {
-        display: block; text-align: center;
+        display: block; margin-top: 10%;
         font-size: 200%; /* yikes */
     }
 }
