@@ -3,8 +3,6 @@
             // On click events with text input respond negatively to using the enter key >:(
                 -- Actually it's only on the cheatsheet password thing. Maybe because of Jq. Maybe not. Who knows????
             // Wtf you always have to type in lowercase because im dumb
-            // LOL @the_layering
-            // If you go from level select to menu, then start game- don't.
 */
 let lvl1 = document.getElementById("wrwc1");
 let lvl2 = document.getElementById("dpab2");

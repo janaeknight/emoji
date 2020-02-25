@@ -1,0 +1,50 @@
+html {
+    background-color: #FFC83D;
+    cursor: url(../css/smiDef.cur), auto !important;
+}
+body {
+    display: flex; flex-direction: row;
+    width: 99vw; height: 99vh; margin: 0 auto;
+    font-family: monospace, Consolas, monaco;
+}
+a, a:hover, button, form, input {
+    cursor: url(../css/smiLoud.cur), pointer !important;
+}
+
+/*+-+-+-+-+-+-+-+-+-+-+-+-+ ... +-+-+-+-+-+-+-+-+-+-+-+-+*/
+
+#thingstohide {
+    display: none;
+}
+
+.activeZ {
+    z-index: 99999;
+}
+
+/*+-+-+-+-+-+-+-+-+-+-+-+-+ ... +-+-+-+-+-+-+-+-+-+-+-+-+*/
+
+.window {
+    width: 600px; height: 402px; background-color: lightcyan;
+    margin: 105px auto;
+    border: 1px groove grey; outline: 2px inset gray;
+}
+
+#cheatsheet, #smiley { display: none; }
+
+.taskbar {
+    width: inherit; height: 26px; background-color: pink; 
+    display: flex; flex-direction: row;
+    font-size: 18px; border-bottom: 1.5px inset black;
+}
+.taskbar a {
+    background-color: silver; font-size: 16px;
+    text-decoration: none; color: #000; padding: 0px 5px;
+    border: 1px groove goldenrod; outline: 1px inset darkslategray;
+}
+
+/*
+    Aligns taskbar buttons
+*/
+    #busy .db3 {
+        margin-top: 1px; margin-right: 2px;
+    }
