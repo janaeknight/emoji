@@ -30,23 +30,223 @@
 </head>
 <body>
 
-    <div class="window" id="cheatsheet">
-        <a class="xThisWindow"></a>
-    </div>
-    <div class="window" id="busy">
-        <div class="taskbar">
-            <div class="db7">
-                <span><b> &nbsp;The Emoji Game 😈</b></span>
-            </div>
-            <div class="db3 txt-right">
-                <a id="smiley-btn">☻</a>
-                <a href="https://github.com/janaeknight"><b>X</b></a>
+    <div class="db2"> <!-- 📜 -->
+        <div class="window" id="cheatsheet">
+            <div class="taskbar">
+                <div class="db7">
+                    <span>&nbsp;Cheatsheet 📜</span>
+                </div>
+                <div class="db3">
+                    <a class="xThisWindow">X</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="window" id="smiley">
-        <a class="xThisWindow"></a>
+
+    <div class="db6"> <!-- 🎮 -->
+        <div class="window" id="busy">
+            <div class="taskbar">
+                <div class="db7">
+                    <span> &nbsp;The Emoji Game 😈</span>
+                </div>
+                <div class="db3">
+                    <a id="gotoSmiley">☻</a>
+                    <a href="https://github.com/janaeknight"><b>X</b></a>
+                </div>
+            </div>
+            <div class="innerWindow" id="main">
+                <p class="t16">😭</p><br><br>
+                <div class="row txt-center">
+                    <div class="db1"></div>
+                    <div class="db3">
+                        <span onclick="startgame()">> Start Game</span><br><br>
+                        <span id="gotoCheatsheet">> Cheatsheet</span>
+                    </div>
+                    <div class="db2"></div>
+                    <div class="db3">
+                        <span id="gotoInstructions">> Instructions</span><br><br>
+                        <span id="gotoLvlSel">> Level Select</span>
+                    </div>
+                    <div class="db1"></div>
+                </div>
+            </div>
+            <div class="innerWindow hiddenMain" id="instructions">
+                <br><span class="gotoMain">〱 Back to Menu</span><br><br>
+                <div class="column txt-center">
+                    <aside class="t9"><b>Instructions</b></aside>
+                    <br><br>
+                    <aside>🔎 Examine the emojis.</aside><br>
+                    <aside>&#x1F575;&#xFE0F;&#x200D;&#x2640;&#xFE0F; Decipher the code.</aside><br>
+                    <aside>📓 Write what you think the pictogram means.</aside><br>
+                    <aside>✔ Pass the level and ➡ to the next one 😎</aside><br><br>
+                    <aside>🧠 <em>Pro Tip:</em> Use lowercase!</aside>
+                </div>
+            </div>
+            <div class="innerWindow hiddenMain" id="lvlSel">
+                <br><span class="gotoMain">〱 Back to Menu</span><br><br>
+                <div class="column txt-center">
+                    <aside class="t9"><b>Level Select</b></aside>
+                    <div class="lvlSelPg" id="lvlSelMain">
+                        <div class="row">
+                            <a class="levelSelectNum">01</a>
+                            <a class="levelSelectNum">02</a>
+                            <a class="levelSelectNum">03</a>
+                            <a class="levelSelectNum">04</a>
+                            <a class="levelSelectNum">05</a>
+                            <a class="levelSelectNum">06</a>
+                            <a class="levelSelectNum">07</a>
+                            <a class="levelSelectNum">08</a>
+                            <a class="levelSelectNum">09</a>
+                            <a class="levelSelectNum">10</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">11</a>
+                            <a class="levelSelectNum">12</a>
+                            <a class="levelSelectNum">13</a>
+                            <a class="levelSelectNum">14</a>
+                            <a class="levelSelectNum">15</a>
+                            <a class="levelSelectNum">16</a>
+                            <a class="levelSelectNum">17</a>
+                            <a class="levelSelectNum">18</a>
+                            <a class="levelSelectNum">19</a>
+                            <a class="levelSelectNum">20</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">21</a>
+                            <a class="levelSelectNum">22</a>
+                            <a class="levelSelectNum">23</a>
+                            <a class="levelSelectNum">24</a>
+                            <a class="levelSelectNum">25</a>
+                            <a class="levelSelectNum">26</a>
+                            <a class="levelSelectNum">27</a>
+                            <a class="levelSelectNum">28</a>
+                            <a class="levelSelectNum">29</a>
+                            <a class="levelSelectNum">30</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">31</a>
+                            <a class="levelSelectNum">32</a>
+                            <a class="levelSelectNum">33</a>
+                            <a class="levelSelectNum">34</a>
+                            <a class="levelSelectNum">35</a>
+                            <a class="levelSelectNum">36</a>
+                            <a class="levelSelectNum">37</a>
+                            <a class="levelSelectNum">38</a>
+                            <a class="levelSelectNum">39</a>
+                            <a class="levelSelectNum">40</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">41</a>
+                            <a class="levelSelectNum">42</a>
+                            <a class="levelSelectNum">43</a>
+                            <a class="levelSelectNum">44</a>
+                            <a class="levelSelectNum">45</a>
+                            <a class="levelSelectNum">46</a>
+                            <a class="levelSelectNum">47</a>
+                            <a class="levelSelectNum">48</a>
+                            <a class="levelSelectNum">49</a>
+                            <a class="levelSelectNum">50</a>
+                        </div>
+                        <!--div class="row">
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                            <a class="levelSelectNum"></a>
+                        </div-->
+                        <div class="txt-right">
+                            <span class="toLvlPgNxt">Next Page 〉</span>
+                        </div>
+                    </div>
+                    <div class="lvlSelPg hiddenLvlSel" id="lvlSelPg2">
+                        <div class="row">
+                            <a class="levelSelectNum">51</a>
+                            <a class="levelSelectNum">52</a>
+                            <a class="levelSelectNum">53</a>
+                            <a class="levelSelectNum">54</a>
+                            <a class="levelSelectNum">55</a>
+                            <a class="levelSelectNum">56</a>
+                            <a class="levelSelectNum">57</a>
+                            <a class="levelSelectNum">58</a>
+                            <a class="levelSelectNum">59</a>
+                            <a class="levelSelectNum">60</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">61</a>
+                            <a class="levelSelectNum">62</a>
+                            <a class="levelSelectNum">63</a>
+                            <a class="levelSelectNum">64</a>
+                            <a class="levelSelectNum">65</a>
+                            <a class="levelSelectNum">66</a>
+                            <a class="levelSelectNum">67</a>
+                            <a class="levelSelectNum">68</a>
+                            <a class="levelSelectNum">69</a>
+                            <a class="levelSelectNum">70</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">71</a>
+                            <a class="levelSelectNum">72</a>
+                            <a class="levelSelectNum">73</a>
+                            <a class="levelSelectNum">74</a>
+                            <a class="levelSelectNum">75</a>
+                            <a class="levelSelectNum">76</a>
+                            <a class="levelSelectNum">77</a>
+                            <a class="levelSelectNum">78</a>
+                            <a class="levelSelectNum">79</a>
+                            <a class="levelSelectNum">80</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">81</a>
+                            <a class="levelSelectNum">82</a>
+                            <a class="levelSelectNum">83</a>
+                            <a class="levelSelectNum">84</a>
+                            <a class="levelSelectNum">85</a>
+                            <a class="levelSelectNum">86</a>
+                            <a class="levelSelectNum">87</a>
+                            <a class="levelSelectNum">88</a>
+                            <a class="levelSelectNum">89</a>
+                            <a class="levelSelectNum">90</a>
+                        </div>
+                        <div class="row">
+                            <a class="levelSelectNum">91</a>
+                            <a class="levelSelectNum">92</a>
+                            <a class="levelSelectNum">93</a>
+                            <a class="levelSelectNum">94</a>
+                            <a class="levelSelectNum">95</a>
+                            <a class="levelSelectNum">96</a>
+                            <a class="levelSelectNum">97</a>
+                            <a class="levelSelectNum">98</a>
+                            <a class="levelSelectNum">99</a>
+                            <a class="levelSelectNum">100</a>
+                        </div>
+                        <div class="txt-left">
+                            <span class="toLvlPgPrev">〈 Previous Page</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="innerWindow hiddenMain" id=""></div>
+        </div>
     </div>
+
+    <div class="db2"> <!-- 🙂 -->
+        <div class="window" id="smiley">
+            <div class="taskbar">
+                <div class="db7">
+                    <span>&nbsp;Smiley 😊</span>
+                </div>
+                <div class="db3">
+                    <a class="xThisWindow">X</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="java/pseudojavascript.js"></script>
 </body>
 </html>

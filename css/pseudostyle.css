@@ -1,19 +1,23 @@
 html {
     background-color: #FFC83D;
-    cursor: url(../css/smiDef.cur), auto !important;
+    cursor: url(../css/smiDef.cur), auto !important; /* Default Joy =/ XD */
 }
 body {
     display: flex; flex-direction: row;
     width: 99vw; height: 99vh; margin: 0 auto;
     font-family: monospace, Consolas, monaco;
+    overflow: hidden;
 }
-a, a:hover, button, form, input {
-    cursor: url(../css/smiLoud.cur), pointer !important;
+.taskbar a, button, form, input {
+    cursor: url(../css/smiLoud.cur), pointer !important; /* Yelling */
+}
+.innerWindow span, #lvlSel a {
+    cursor: url(../css/smiJoy.cur), pointer !important; /* Mellow/Flat Smile*/
 }
 
 /*+-+-+-+-+-+-+-+-+-+-+-+-+ ... +-+-+-+-+-+-+-+-+-+-+-+-+*/
 
-#thingstohide {
+#thingstohide, #instructions, #lvlSel, .hiddenLvlSel {
     display: none;
 }
 
@@ -25,11 +29,15 @@ a, a:hover, button, form, input {
 
 .window {
     width: 600px; height: 402px; background-color: lightcyan;
-    margin: 105px auto;
+    position: fixed;
     border: 1px groove grey; outline: 2px inset gray;
 }
 
 #cheatsheet, #smiley { display: none; }
+
+#busy {
+    margin: 105px auto; z-index: 1;
+}
 
 .taskbar {
     width: inherit; height: 26px; background-color: pink; 
@@ -42,9 +50,51 @@ a, a:hover, button, form, input {
     border: 1px groove goldenrod; outline: 1px inset darkslategray;
 }
 
+.taskbar span, .taskbar a { font-weight: bold; }
+
 /*
     Aligns taskbar buttons
 */
-    #busy .db3 {
-        margin-top: 1px; margin-right: 2px;
+    .taskbar .db3 {
+        margin-top: 1.2px !important; margin-right: 2px;
+        text-align: right;
     }
+
+/****************/
+    .innerWindow {
+        display: flex; flex-direction: column;
+        /*background-color: lightgreen;*/ width: 98%; height: 91.5%;
+        margin: auto; margin-top: 3px;
+    }
+    .innerWindow p {
+        font-size: 102px;
+        margin: 0; text-align: center;
+    }
+
+/****************/
+
+    /*
+        Forces underline on level #s    AND,
+        Forces width for rows
+    */
+
+    .lvlSelPg {
+        width: 98%; margin: 0 auto;
+        text-align: center !important;
+    }
+    .lvlSelPg .row {
+        display: block; width: 99%;
+        margin: 20px auto;
+    }
+    #lvlSel .lvlSelPg a {
+        text-decoration: underline !important;
+        font-size: 21px; padding: 3px 8px; margin: 4px;
+    }
+
+/*+-+-+-+-+-+-+-+-+-+-+-+-+ ... +-+-+-+-+-+-+-+-+-+-+-+-+*/
+
+#cheatsheet {
+    width: 450px; height: 226px; background-color: lightcyan;
+    z-index: 2; position: relative; margin-top: 233px; margin-left: 54px;
+    border: 1px groove grey; outline: 2px inset gray;
+}
