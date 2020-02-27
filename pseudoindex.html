@@ -59,7 +59,7 @@
                 <div class="row txt-center">
                     <div class="db1"></div>
                     <div class="db3">
-                        <span onclick="startgame()">> Start Game</span><br><br>
+                        <span id="stgtxt" onclick="startgame()">> Start Game</span><br><br>
                         <span id="gotoCheatsheet">> Cheatsheet</span>
                     </div>
                     <div class="db2"></div>
@@ -230,7 +230,31 @@
                     </div>
                 </div>
             </div>
-            <div class="innerWindow hiddenMain" id=""></div>
+            <div class="innerWindow hiddenMain" id="gamebox">
+
+                <div class="levelswrapper">
+
+                    <div class="level">
+                        <h3>&nbsp;Level 1 // Compound Words</h3>
+                        <p>👬🚢</p>
+                        <input type="input" class = "" placeholder="Type here...">
+                        <div class="submitBtnMass">
+                            <span class="subBtn" onClick=lvlCheck()>Submit</span>
+                        </div>
+                        <br>
+                            <aside class="hintTop">« Hint 1 »</aside>
+                            <aside class="hintBtm">Hint 1: </aside>
+                            <aside class="hintTop">« Hint 2 »</aside>
+                            <aside class="hintBtm">Hint 2: </aside>
+                        <br>
+                    </div>
+
+                </div>
+
+
+
+                <span class="txt-center gotoMain" id="menuFromBusy">Main Menu</span>
+            </div>
         </div>
     </div>
 

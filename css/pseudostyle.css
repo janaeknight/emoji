@@ -14,10 +14,17 @@ body {
 .innerWindow span, #lvlSel a {
     cursor: url(../css/smiJoy.cur), pointer !important; /* Mellow/Flat Smile*/
 }
+input, input:hover {
+    cursor: url(../css/smiKat.cur), pointer !important; /* :3 */
+}
+.subBtn {
+    cursor: url(../css/smiEggsDee.cur), pointer !important; /* XD */
+}
+
 
 /*+-+-+-+-+-+-+-+-+-+-+-+-+ ... +-+-+-+-+-+-+-+-+-+-+-+-+*/
 
-#thingstohide, #instructions, #lvlSel, .hiddenLvlSel {
+#thingstohide, #instructions, #lvlSel, #gamebox, .hiddenLvlSel {
     display: none;
 }
 
@@ -29,15 +36,10 @@ body {
 
 .window {
     width: 600px; height: 402px; background-color: lightcyan;
-    position: fixed;
     border: 1px groove grey; outline: 2px inset gray;
 }
 
 #cheatsheet, #smiley { display: none; }
-
-#busy {
-    margin: 105px auto; z-index: 1;
-}
 
 .taskbar {
     width: inherit; height: 26px; background-color: pink; 
@@ -93,8 +95,51 @@ body {
 
 /*+-+-+-+-+-+-+-+-+-+-+-+-+ ... +-+-+-+-+-+-+-+-+-+-+-+-+*/
 
+#busy {
+    top: 44%; left: 50%; z-index: 1;
+    -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+}
+    #menuFromBusy { border-top: 1px dashed lightslategray; }
+    #menuFromBusy { display: block; padding-top: 10px;}
+
+    .level h3 {
+        padding: 0 1px; margin: 0; text-align: left !important;
+        margin-top: 10px; font-size: 18.72px !important;
+    }
+
+    .level input {
+        display: block; margin: 6px auto;
+        width: 585px; height: 45px;
+        text-align: center; font-size: 25px;
+        background-color: inherit; border: none;
+        margin: 8px 0;
+    }
+    input:focus, select:focus, textarea:focus, button:focus { outline: none; }
+
+    .level .submitBtnMass {
+        display: block; text-align: center;
+        padding: 52px auto;
+    }
+    .level .subBtn {
+        background-color: lightsteelblue; padding: 4px 18px;
+        border: 1.5px groove lightslategray; font-size: 17px;
+    }
+
+    .level aside {
+        text-align: center;
+        padding: 3px 0;
+    }
+
+    .hintBtm { display: none; }
+
 #cheatsheet {
     width: 450px; height: 226px; background-color: lightcyan;
-    z-index: 2; position: relative; margin-top: 233px; margin-left: 54px;
+    z-index: 0; position: relative; margin-top: 233px; margin-left: 54px;
+    border: 1px groove grey; outline: 2px inset gray;
+}
+
+#smiley {
+    width: 220px; height: 345px; background-color: lightcyan;
+    z-index: 0; position: relative; margin-top: 60px; margin-left: -100px;
     border: 1px groove grey; outline: 2px inset gray;
 }

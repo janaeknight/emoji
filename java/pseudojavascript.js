@@ -13,7 +13,7 @@ $(".xThisWindow").on("click", function() {
 });
 
 function removeAllActiveZ() {
-    $(".window").removeClass(".activeZ");
+    $(".window").removeClass("activeZ");
 }
 
 // p -- Main UI
@@ -24,7 +24,7 @@ $("#gotoSmiley").on("click", function() {
     $("#smiley").addClass("activeZ");
 });
 $("#gotoCheatsheet").on("click", function() {
-    //removeAllActiveZ();
+    removeAllActiveZ();
     $("#cheatsheet").show();
     $("#cheatsheet").addClass("activeZ");
 });
@@ -58,9 +58,6 @@ $(".gotoMain").on("click", function() {
 
     // Cheatsheet UI
 
-function startgame() {
-    console.log("here");
-};
 
 // Game INTF.
 
@@ -117,4 +114,52 @@ var a = [
     "",
 ]
 
+let start = document.getElementById("start");
+let lvls = document.getElementById("level-select");
+let lvls2 = document.getElementById("lvls-p2");
+let gmb = document.getElementById("gamebox");
+var stp = 0;
+var ltp = 0;
+
+const levels = [...document.querySelectorAll('.levelSelect')];
+const levelsGame = document.querySelectorAll('.level');
+for (const level of levels) {
+    level.addEventListener('click', showLevel);
+}
+
+function showLevel() {
+    // hide everything first
+    lvls2.style.display = "none";
+    for (const game of levelsGame) {
+        game.style.display = "none";
+        ltp =+ 1;
+        console.log(ltp);
+    }
+    let level = levels.indexOf(this);
+    let game = levelsGame[level];
+    lvls.style.display = "none";
+    gmb.style.display = "block";
+    game.style.display = 'block';
+}
+
+
+function startgame() {
+    $(".hiddenMain, #main").hide();
+    $("#gamebox").show();
+
+    if (stp >= 1 || ltp>=1 ) {
+        gmb.style.display = "block";
+    } else {
+        gmb.style.display = "block";
+        lvl1.style.display = "block";
+        stp =+ 1;
+        document.getElementById('stgtxt').innerHTML = "> Back to Game";
+    }
+};
+
     // Hints UI
+
+    $(".hintTop").on("click", function() {
+        $(this).hide();
+        $(this).next(".hintBtm").show(); ;
+    });
