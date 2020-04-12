@@ -150,7 +150,7 @@ var A = [
     "ugly duckling", "the ugly duckling",
     "beauty and the beast",
     "cinderella",
-    "hansel and gretel", "the story of hansel and gretel",
+    "hansel and gretel", "the story of hansel and gretel", "gretel and hansel",
     "sleeping beauty",
     "the frog prince", "frog prince", "princess and the frog", "the princess and the frog",
     "turn up the music",
@@ -164,7 +164,7 @@ var A = [
     "i'm blessed",
     "happy halloween", "happy halloween!",
     "i love pizza",
-    "girls night out", "girl's night out",
+    "girls night out", "girl's night out", "girl's night", "girls night",
     "heard the news", "heard the news?",
     "cross my heart", "cross your heart",
     "time's running out", "times running out",
@@ -224,24 +224,22 @@ var A = [
 
 
 $(".subBtn").click(function() {
-    var userA = $(".input").val(); // gets input from input
+    //var userA = $(".input").val(); // gets input from input
+    var userA = $(".input:visible").val(); // gets input from VISIBLE input. This distinction is 👍
     console.log(userA);
 
-        // Updates Score
-        var scoreNum = $("#scoreNum").text();
-        var nextScoreNum = "";
-            if ($.inArray(userA, A) !=-1) {
-                // GO TO NEXT, BUT DO NOTHING RN
+        if ($.inArray(userA, A) !=-1) {
+            // GO TO NEXT, BUT DO NOTHING RN
 
-                    var thisStage = $(this).closest('.level');
-                    var nextStage = $(thisStage).next('.level');
+                var thisStage = $(this).closest('.level');
+                var nextStage = $(thisStage).next('.level');
 
-                    thisStage.hide();
-                    nextStage.show();
-                    $('.input').val(""); // clears input boxggggg
-            } else {
-                // DO NOTHING
+                thisStage.hide();
+                nextStage.show();
+                $('.input').val(""); // clears input boxggggg
+        } else {
+            // DO NOTHING
                 $('.input').val(""); // clears input box
-                console.log("hey... kids!");
-            }
+                console.log("Something is wrong...");
+        }
 });
