@@ -58,6 +58,28 @@ $(".gotoMain").on("click", function() {
 
     // Cheatsheet UI
 
+    $("#cheatPassUnlockBtn").click(function() {
+        let cheatPassInput = $("#cheatsheet input:password").val();
+        if(cheatPassInput === "password1") {
+            $("#cheatPasslock").hide();
+            $("#cheatWindowTop").show();
+        } else {
+            $("#cheatPassInput").val(""); // clears incorrect password
+        }
+    });
+
+        $(".csNext").click(function() {
+            var thisCheatScreen = $(this).closest('.cheatWindow');
+            var nextCheatScreen = $(thisCheatScreen).next('.cheatWindow');
+            thisCheatScreen.hide();
+            nextCheatScreen.show();
+        });
+        $(".csPrev").click(function() {
+            var thisCheatScreen = $(this).closest('.cheatWindow');
+            var prevCheatScreen = $(thisCheatScreen).prev('.cheatWindow');
+            thisCheatScreen.hide();
+            prevCheatScreen.show();
+        });
 
 // Game INTF.
 
@@ -105,6 +127,8 @@ function startgame() {
         stp =+ 1;
         document.getElementById('stgtxt').innerHTML = "> Back to Game";
     };
+
+    document.getElementById('stgtxt').innerHTML = "> Back to Game";
 };
 
     // Hints UI
@@ -115,7 +139,7 @@ function startgame() {
     });
 
 
-
+// Poor Man's "Game" Backend ---->
 
 
 var A = [
@@ -221,8 +245,6 @@ var A = [
     "windows"
 ]
 
-
-
 $(".subBtn").click(function() {
     //var userA = $(".input").val(); // gets input from input
     var userA = $(".input:visible").val(); // gets input from VISIBLE input. This distinction is 👍
@@ -236,7 +258,7 @@ $(".subBtn").click(function() {
 
                 thisStage.hide();
                 nextStage.show();
-                $('.input').val(""); // clears input boxggggg
+                $('.input').val(""); // clears input box
         } else {
             // DO NOTHING
                 $('.input').val(""); // clears input box

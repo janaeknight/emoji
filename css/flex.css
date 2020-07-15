@@ -1,3 +1,13 @@
+:disabled {
+    cursor: url(../css/symDisabled.cur), auto !important;
+}
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+:root { 
+    --var: aliceblue;
+}
+
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
 
 /* TENTHS */
@@ -22,8 +32,29 @@
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
 
-.row { display: flex; flex-direction: row; }
-.column { display: flex; flex-direction: column; }
+/* CONTENT BOX SIZING (VERTICAL)*/
+
+.massFill {
+    display: inherit;
+    width: 100%; height: 98vh;
+}
+.halfFill {
+    display: inherit;
+    width: 100%; height: 50vh;
+}
+.thirdFill {
+    display: inherit;
+    width: 100%; height: 33.33vh;
+}
+.fourthFill {
+    display: inherit;
+    width: 100%; height: 50vh;
+}
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+.row { display: flex; flex-direction: row; width: 100%; }
+.column { display: flex; flex-direction: column; width: 100%; height: 98%; }
 
 /*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
 
@@ -36,6 +67,28 @@
 
 .margin { margin-left: auto; margin-right: auto;}
 .center img { margin-left: auto; margin-right: auto; }
-.radius { border-radius: 100%; }
+.radius { border-radius: 100%;}
 
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
 
+h1, h2, h3, h4, h5, h6 { display: block; text-align: center; margin: 3px auto;}
+h1 { font-size: 85px; } h2 { font-size: 65px; }
+h3 { font-size: 45px; }
+
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+.t1 { font-size: xx-small; }    .t2 { font-size: x-small; }
+.t3 { font-size: smaller; }     .t4 { font-size: small; }
+.t5 { font-size: medium; }      .t6 { font-size: large; }
+.t7 { font-size: larger; }      .t8 { font-size: x-large; }
+.t9 { font-size: xx-large; }    .t10 { font-size: 90px !important; }
+.t11 { font-size: 80px !important; }       .t12 { font-size: 70px !important; }
+.t13 { font-size: 60px !important; }       .t14 { font-size: 50px !important; }
+.t15 { font-size: 40px !important; }       .t16 { font-size: 180px !important; }
+
+.t0016 { font-size: 16px; } .t0022 { font-size: 22px; }
+/*~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-*/
+
+.hl-red { color: red; }     .hl-bl { color: blue; }
+.hl-pink { color: pink; }   .hl-liBl { color: lightseagreen; }
+.hl-green { color: green; } .hl-purp { color: purple; }
