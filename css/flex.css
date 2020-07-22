@@ -79,7 +79,7 @@ h3 { font-size: 45px; }
 
 .t1 { font-size: xx-small; }    .t2 { font-size: x-small; }
 .t3 { font-size: smaller; }     .t4 { font-size: small; }
-.t5 { font-size: medium; }      .t6 { font-size: large; }
+.t5 { font-size: medium; }      .t6 { font-size: large !important; }
 .t7 { font-size: larger; }      .t8 { font-size: x-large; }
 .t9 { font-size: xx-large; }    .t10 { font-size: 90px !important; }
 .t11 { font-size: 80px !important; }       .t12 { font-size: 70px !important; }

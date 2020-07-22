@@ -18,16 +18,18 @@ function removeAllActiveZ() {
 
 // p -- Main UI
 
-$("#gotoSmiley").on("click", function() {
+$(document).on('click', '#gotoSmiley', function(){
     removeAllActiveZ();
     $("#smiley").show();
     $("#smiley").addClass("activeZ");
-});
-$("#gotoCheatsheet").on("click", function() {
+}); 
+$(document).on('click', '#gotoCheatsheet', function(){
     removeAllActiveZ();
     $("#cheatsheet").show();
     $("#cheatsheet").addClass("activeZ");
-});
+}); 
+
+
 $("#gotoInstructions").on("click", function() {
     $("#main").hide();
     $("#instructions").show();
